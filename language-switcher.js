@@ -2,13 +2,13 @@
 const LANGUAGE_CONFIG = {
     zh: {
        
-        url: '/',
-        name: 'English'
+        url: '/zh/',
+        name: '中文'
     },
     en: {
        
-        url: '/zh/',
-        name: '中文'
+        url: '/',
+        name: 'English'
     },
     it: {
        
