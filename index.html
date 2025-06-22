@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Precise Age Calculator - Calculate exact time difference between dates with hour/minute selection. Shows years, months, weeks, days, hours, minutes, seconds. Based on international standards, supports result sharing.">
+    <meta name="keywords" content="age calculator,birthday calculator,date calculator,age query,online calculator">
+    <meta name="author" content="Age computation">
+    <meta property="og:title" content="Age computation Precise Age Calculator - Online Date Calculation Tool">
+    <meta property="og:description" content="Calculate exact age difference between two dates with detailed time units">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/">
+    <meta property="og:site_name" content="Age Computation">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="vi_VN">
+    
+    <!-- Hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://agecomputation.com/">
+    <link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/">
+    <link rel="alternate" hreflang="it" href="https://agecomputation.com/it/">
+    <link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/">
+    <link rel="alternate" hreflang="x-default" href="https://agecomputation.com/">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/">
+    
+    <title>Age computation_Precise Age Calculator - Online Date Calculation Tool</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Age Calculator",
+        "description": "Precise calculation of age difference between two dates",
+        "url": "https://agecomputation.com/",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "en-US",
+        "availableLanguage": [
+            {
+                "@type": "Language",
+                "name": "Chinese",
+                "alternateName": "zh-CN"
+            },
+            {
+                "@type": "Language", 
+                "name": "English",
+                "alternateName": "en-US"
+            },
+            {
+                "@type": "Language",
+                "name": "Italian", 
+                "alternateName": "it-IT"
+            },
+            {
+                "@type": "Language",
+                "name": "Vietnamese",
+                "alternateName": "vi-VN"
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh">中文</option>
+                    <option value="en" selected>English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>🎂 Precise Age Calculator</h1>
+            <p class="subtitle">Calculate exact time difference between two dates</p>
+        </header>
+
+        <main>
+            <div class="calculator-card">
+                <form id="ageForm" class="age-form">
+                    <div class="input-group">
+                        <label for="birthDate">
+                            <span class="label-text">Birth Date & Time</span>
+                            <span class="label-icon">🕐</span>
+                        </label>
+                        <input type="datetime-local" id="birthDate" name="birthDate" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="targetDate">
+                            <span class="label-text">Calculate to Date & Time</span>
+                            <span class="label-icon">🎯</span>
+                        </label>
+                        <input type="datetime-local" id="targetDate" name="targetDate" required>
+                    </div>
+
+                    <button type="submit" class="calculate-btn">
+                        <span>Calculate Age</span>
+                        <span class="btn-icon">⚡</span>
+                    </button>
+                </form>
+
+                <div id="result" class="result-section" style="display: none;">
+                    <h2>Calculation Result</h2>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-value" id="years">0</span>
+                            <span class="result-label">Years</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="months">0</span>
+                            <span class="result-label">Months</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="days">0</span>
+                            <span class="result-label">Days</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="hours">0</span>
+                            <span class="result-label">Hours</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="minutes">0</span>
+                            <span class="result-label">Minutes</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="seconds">0</span>
+                            <span class="result-label">Seconds</span>
+                        </div>
+                    </div>
+                    
+                    <div class="summary">
+                        <p id="summaryText"></p>
+                        <div class="calculation-note">
+                            <small>💡 Note: This tool uses precise day calculation based on international Western age calculation standards</small>
+                        </div>
+                    </div>
+                    
+                    <div class="detailed-stats">
+                        <h3>Detailed Statistics</h3>
+                        <div id="detailedStats" class="stats-list">
+                            <!-- Detailed statistics will be inserted dynamically via JavaScript -->
+                        </div>
+                        
+                        <div class="result-actions">
+                            <button id="shareBtn" class="action-btn share-btn">
+                                <span>📤</span>
+                                <span>Share Result</span>
+                            </button>
+                            <button id="saveBtn" class="action-btn save-btn">
+                                <span>💾</span>
+                                <span>Save & Download</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>Usage Instructions & Calculation Principles</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>📝 How to Use</h3>
+                        <p>Select birth date & time and target date & time to get precise time difference results down to the second. Supports real-time calculation - results update automatically when you change the time.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🌍 Calculation Standards</h3>
+                        <p>The age of a person can be counted differently in different cultures. This calculator is based on the most common age system. In this system, age increases on a person's birthday. For example, the age of a person who has lived for 3 years and 11 months is 3, and their age will increase to 4 on their next birthday one month later. Most western countries use this age system.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🏮 Age Calculation in Different Cultures</h3>
+                        <p>In some cultures, age is expressed by counting years with or without including the current year. For example, a person who is twenty years old is the same age as another person who is in their twenty-first year of life. In one of the traditional Chinese age systems, people are born at age 1 and their age increases up at the Traditional Chinese New Year rather than their birthday. For example, if one baby is born just one day before the Traditional Chinese New Year, 2 days later, the baby will be 2 even though he/she is only 2 days old.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📅 Month and Day Calculation Notes</h3>
+                        <p>In some situations, the months and day result of this age calculator may be confusing, especially when the starting date is the end of a month. For example, we count Feb. 20 to Mar. 20 to be one month. However, there are two ways to calculate the age from Feb. 28, 2022 to Mar. 31, 2022. If we consider Feb. 28 to Mar. 28 to be one month, then the result is one month and 3 days. If we consider both Feb. 28 and Mar. 31 as the end of the month, then the result is one month. Both calculation results are reasonable.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>⚙️ Our Calculation Method</h3>
+                        <p>The confusion comes from the uneven number of days in different months. In our calculations, we use the former method (precise day calculation). This ensures consistency and precision in calculation results, especially suitable for scenarios requiring exact time differences.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📱 Features</h3>
+                        <p>• Precise calculation down to seconds<br>
+                           • Multiple time unit displays (years, months, weeks, days, hours, minutes, seconds)<br>
+                           • Result sharing and saving functionality<br>
+                           • Fully responsive design, compatible with all devices</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Age Calculator. Simple and easy-to-use online date calculation tool.</p>
+        </footer>
+    </div>
+
+    <script src="language-switcher.js"></script>
+    <script src="script-en.js"></script>
+</body>
+</html> 

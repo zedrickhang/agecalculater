@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Máy Tính Tuổi Chính Xác - Tính chênh lệch thời gian chính xác giữa các ngày với lựa chọn giờ/phút. Hiển thị năm, tháng, tuần, ngày, giờ, phút, giây. Dựa trên tiêu chuẩn quốc tế.">
+    <meta name="keywords" content="máy tính tuổi,tính tuổi,tính ngày tháng,máy tính trực tuyến">
+    <meta name="author" content="Age Calculator">
+    <meta property="og:title" content="Máy Tính Tuổi Chính Xác - Công Cụ Tính Ngày Tháng Trực Tuyến">
+    <meta property="og:description" content="Tính chênh lệch tuổi chính xác giữa hai ngày với các đơn vị thời gian chi tiết">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/vi/">
+    <meta property="og:site_name" content="Age Computation">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="it_IT">
+    
+    <!-- Hreflang cho SEO đa ngôn ngữ -->
+  <link rel="alternate" hreflang="en" href="https://agecomputation.com/">
+    <link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/">
+    <link rel="alternate" hreflang="it" href="https://agecomputation.com/it/">
+    <link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/">
+    <link rel="alternate" hreflang="x-default" href="https://agecomputation.com/">
+    
+    <!-- URL Canonical -->
+    <link rel="canonical" href="https://agecomputation.com/vi/">
+    
+    <title>Máy Tính Tuổi Chính Xác - Công Cụ Tính Ngày Tháng Trực Tuyến</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Máy Tính Tuổi",
+        "description": "Tính toán chính xác chênh lệch tuổi giữa hai ngày",
+        "url": "https://agecomputation.com/vi/",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "vi-VN",
+        "availableLanguage": [
+            {
+                "@type": "Language",
+                "name": "Chinese",
+                "alternateName": "zh-CN"
+            },
+            {
+                "@type": "Language", 
+                "name": "English",
+                "alternateName": "en-US"
+            },
+            {
+                "@type": "Language",
+                "name": "Italian", 
+                "alternateName": "it-IT"
+            },
+            {
+                "@type": "Language",
+                "name": "Vietnamese",
+                "alternateName": "vi-VN"
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi" selected>Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>🎂 Máy Tính Tuổi Chính Xác</h1>
+            <p class="subtitle">Tính chênh lệch thời gian chính xác giữa hai ngày</p>
+        </header>
+
+        <main>
+            <div class="calculator-card">
+                <form id="ageForm" class="age-form">
+                    <div class="input-group">
+                        <label for="birthDate">
+                            <span class="label-text">Ngày Giờ Sinh</span>
+                            <span class="label-icon">🕐</span>
+                        </label>
+                        <input type="datetime-local" id="birthDate" name="birthDate" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="targetDate">
+                            <span class="label-text">Tính Đến Ngày Giờ</span>
+                            <span class="label-icon">🎯</span>
+                        </label>
+                        <input type="datetime-local" id="targetDate" name="targetDate" required>
+                    </div>
+
+                    <button type="submit" class="calculate-btn">
+                        <span>Tính Tuổi</span>
+                        <span class="btn-icon">⚡</span>
+                    </button>
+                </form>
+
+                <div id="result" class="result-section" style="display: none;">
+                    <h2>Kết Quả Tính Toán</h2>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-value" id="years">0</span>
+                            <span class="result-label">Năm</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="months">0</span>
+                            <span class="result-label">Tháng</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="days">0</span>
+                            <span class="result-label">Ngày</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="hours">0</span>
+                            <span class="result-label">Giờ</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="minutes">0</span>
+                            <span class="result-label">Phút</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="seconds">0</span>
+                            <span class="result-label">Giây</span>
+                        </div>
+                    </div>
+                    
+                    <div class="summary">
+                        <p id="summaryText"></p>
+                        <div class="calculation-note">
+                            <small>💡 Lưu ý: Công cụ này sử dụng phương pháp tính ngày chính xác dựa trên tiêu chuẩn tính tuổi phương Tây quốc tế</small>
+                        </div>
+                    </div>
+                    
+                    <div class="detailed-stats">
+                        <h3>Thống Kê Chi Tiết</h3>
+                        <div id="detailedStats" class="stats-list">
+                            <!-- Thống kê chi tiết sẽ được chèn động qua JavaScript -->
+                        </div>
+                        
+                        <div class="result-actions">
+                            <button id="shareBtn" class="action-btn share-btn">
+                                <span>📤</span>
+                                <span>Chia Sẻ Kết Quả</span>
+                            </button>
+                            <button id="saveBtn" class="action-btn save-btn">
+                                <span>💾</span>
+                                <span>Lưu & Tải Xuống</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>Hướng Dẫn Sử Dụng & Nguyên Lý Tính Toán</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>📝 Cách Sử Dụng</h3>
+                        <p>Chọn ngày giờ sinh và ngày giờ đích để nhận kết quả chênh lệch thời gian chính xác đến từng giây. Hỗ trợ tính toán thời gian thực - kết quả tự động cập nhật khi bạn thay đổi thời gian.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🌍 Tiêu Chuẩn Tính Toán</h3>
+                        <p>Tuổi của một người có thể được tính khác nhau ở các nền văn hóa khác nhau. Máy tính này dựa trên hệ thống tuổi phổ biến nhất. Trong hệ thống này, tuổi tăng lên vào ngày sinh nhật của người đó. Ví dụ, tuổi của một người đã sống được 3 năm 11 tháng là 3, và tuổi của họ sẽ tăng lên 4 vào sinh nhật tiếp theo một tháng sau. Hầu hết các nước phương Tây sử dụng hệ thống tuổi này.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🏮 Tính Tuổi Trong Các Nền Văn Hóa Khác Nhau</h3>
+                        <p>Ở một số nền văn hóa, tuổi được biểu thị bằng cách đếm năm có hoặc không bao gồm năm hiện tại. Ví dụ, một người hai mười tuổi có cùng tuổi với một người khác đang ở năm thứ hai mười một của cuộc đời. Trong một trong những hệ thống tuổi truyền thống của Trung Quốc, mọi người sinh ra ở tuổi 1 và tuổi của họ tăng lên vào dịp Tết Nguyên Đán Truyền Thống chứ không phải vào sinh nhật của họ.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📅 Lưu Ý Về Tính Tháng Và Ngày</h3>
+                        <p>Trong một số tình huống, kết quả tháng và ngày của máy tính tuổi này có thể gây nhầm lẫn, đặc biệt khi ngày bắt đầu là cuối tháng. Ví dụ, chúng ta tính từ 20 tháng 2 đến 20 tháng 3 là một tháng. Tuy nhiên, có hai cách để tính tuổi từ 28 tháng 2 năm 2022 đến 31 tháng 3 năm 2022. Nếu chúng ta coi từ 28 tháng 2 đến 28 tháng 3 là một tháng, thì kết quả là một tháng và 3 ngày. Nếu chúng ta coi cả 28 tháng 2 và 31 tháng 3 đều là cuối tháng, thì kết quả là một tháng.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>⚙️ Phương Pháp Tính Toán Của Chúng Tôi</h3>
+                        <p>Sự nhầm lẫn đến từ số ngày không đồng đều trong các tháng khác nhau. Trong các tính toán của chúng tôi, chúng tôi sử dụng phương pháp đầu tiên (tính toán ngày chính xác). Điều này đảm bảo tính nhất quán và chính xác trong kết quả tính toán, đặc biệt phù hợp cho các tình huống yêu cầu chênh lệch thời gian chính xác.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📱 Tính Năng</h3>
+                        <p>• Tính toán chính xác đến từng giây<br>
+                           • Hiển thị nhiều đơn vị thời gian (năm, tháng, tuần, ngày, giờ, phút, giây)<br>
+                           • Chức năng chia sẻ và lưu kết quả<br>
+                           • Thiết kế hoàn toàn responsive, tương thích với tất cả thiết bị</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Máy Tính Tuổi. Công cụ tính toán ngày tháng trực tuyến đơn giản và dễ sử dụng.</p>
+        </footer>
+    </div>
+
+    <script src="../language-switcher.js"></script>
+    <script src="script-vi.js"></script>
+</body>
+</html> 

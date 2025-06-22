@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Disallow certain file types that are not useful for SEO
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.json$
+
+# Allow specific important files
+Allow: /language-switcher.js
+Allow: /script*.js
+Allow: /styles.css
+
+# Sitemap location
+Sitemap: https://agecomputation.com/sitemap.xml
+
+# Additional directives for better crawling
+Crawl-delay: 1
+
+# Allow all language versions
+Allow: /
+Allow: /zh/
+Allow: /it/
+Allow: /vi/ 

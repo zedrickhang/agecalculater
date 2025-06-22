@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="精确的年龄计算器 - 支持时分秒选择，计算两个日期时间的精确差值。显示年、月、周、天、小时、分钟、秒等多种时间单位。基于国际通用计算标准，支持结果分享保存。">
+    <meta name="keywords" content="年龄计算器,生日计算器,日期计算,年龄查询,在线计算器">
+    <meta name="author" content="Age Calculator">
+    <meta property="og:title" content="精确年龄计算器 - 在线日期计算工具">
+    <meta property="og:description" content="计算两个日期之间的精确年龄差，支持年月日时分秒显示">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/zh/">
+    <meta property="og:site_name" content="Age Computation">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="vi_VN">
+    
+    <!-- Hreflang for multilingual SEO -->
+     <link rel="alternate" hreflang="en" href="https://agecomputation.com/">
+    <link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/">
+    <link rel="alternate" hreflang="it" href="https://agecomputation.com/it/">
+    <link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/">
+    <link rel="alternate" hreflang="x-default" href="https://agecomputation.com/">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/">
+    
+    <title>精确年龄计算器 - 在线日期计算工具</title>
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "年龄计算器",
+        "description": "精确计算两个日期之间的年龄差",
+        "url": "https://agecomputation.com/zh/",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "zh-CN",
+        "availableLanguage": [
+            {
+                "@type": "Language",
+                "name": "Chinese",
+                "alternateName": "zh-CN"
+            },
+            {
+                "@type": "Language", 
+                "name": "English",
+                "alternateName": "en-US"
+            },
+            {
+                "@type": "Language",
+                "name": "Italian", 
+                "alternateName": "it-IT"
+            },
+            {
+                "@type": "Language",
+                "name": "Vietnamese",
+                "alternateName": "vi-VN"
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh" selected>中文</option>
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>🎂 精确年龄计算器</h1>
+            <p class="subtitle">计算两个日期之间的精确时间差</p>
+        </header>
+
+        <main>
+            <div class="calculator-card">
+                <form id="ageForm" class="age-form">
+                    <div class="input-group">
+                        <label for="birthDate">
+                            <span class="label-text">出生日期时间</span>
+                            <span class="label-icon">🕐</span>
+                        </label>
+                        <input type="datetime-local" id="birthDate" name="birthDate" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="targetDate">
+                            <span class="label-text">计算到日期时间</span>
+                            <span class="label-icon">🎯</span>
+                        </label>
+                        <input type="datetime-local" id="targetDate" name="targetDate" required>
+                    </div>
+
+                    <button type="submit" class="calculate-btn">
+                        <span>计算年龄</span>
+                        <span class="btn-icon">⚡</span>
+                    </button>
+                </form>
+
+                <div id="result" class="result-section" style="display: none;">
+                    <h2>计算结果</h2>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-value" id="years">0</span>
+                            <span class="result-label">年</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="months">0</span>
+                            <span class="result-label">月</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="days">0</span>
+                            <span class="result-label">天</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="hours">0</span>
+                            <span class="result-label">小时</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="minutes">0</span>
+                            <span class="result-label">分钟</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="seconds">0</span>
+                            <span class="result-label">秒</span>
+                        </div>
+                    </div>
+                    
+                    <div class="summary">
+                        <p id="summaryText"></p>
+                        <div class="calculation-note">
+                            <small>💡 计算说明：本工具采用精确天数计算法，基于国际通用的西方年龄计算标准</small>
+                        </div>
+                    </div>
+                    
+                    <div class="detailed-stats">
+                        <h3>详细统计</h3>
+                        <div id="detailedStats" class="stats-list">
+                            <!-- 详细统计信息将通过JavaScript动态插入 -->
+                        </div>
+                        
+                        <div class="result-actions">
+                            <button id="shareBtn" class="action-btn share-btn">
+                                <span>📤</span>
+                                <span>分享结果</span>
+                            </button>
+                            <button id="saveBtn" class="action-btn save-btn">
+                                <span>💾</span>
+                                <span>保存下载</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>使用说明与计算原理</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>📝 如何使用</h3>
+                        <p>选择出生日期时间和目标日期时间，即可获得精确到秒的时间差结果。支持实时计算，修改时间后自动更新结果。</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🌍 计算标准说明</h3>
+                        <p>不同文化中的年龄计算方式可能有所不同。本计算器基于最常见的年龄计算系统。在这个系统中，年龄在生日当天增加。例如，一个已经生活了3年11个月的人年龄为3岁，在一个月后的生日时年龄将增加到4岁。大多数西方国家都使用这种年龄系统。</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🏮 不同文化的年龄计算</h3>
+                        <p>在某些文化中，年龄的表达方式会计算当前年份或不计算当前年份。例如，二十岁的人与处于人生第二十一年的人年龄相同。在中国传统年龄计算系统之一中，人们出生时即为1岁，年龄在传统农历新年时增加，而不是在生日时。例如，如果一个婴儿在传统农历新年前一天出生，2天后这个婴儿就是2岁，尽管他/她只有2天大。</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📅 月份和天数计算说明</h3>
+                        <p>在某些情况下，本年龄计算器的月份和天数结果可能会令人困惑，特别是当开始日期是月末时。例如，我们将2月20日到3月20日计算为一个月。但是，从2022年2月28日到2022年3月31日的年龄计算有两种方式：如果我们认为2月28日到3月28日是一个月，则结果是一个月零3天；如果我们认为2月28日和3月31日都是月末，则结果是一个月。两种计算结果都是合理的。</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>⚙️ 本工具的计算方法</h3>
+                        <p>由于不同月份天数不均，会产生上述困惑。在我们的计算中，我们使用前一种方法（精确天数计算）。这确保了计算结果的一致性和精确性，特别适合需要精确时间差的场景。</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📱 功能特色</h3>
+                        <p>• 精确到秒的时间计算<br>
+                           • 多种时间单位显示（年、月、周、天、时、分、秒）<br>
+                           • 结果分享和保存功能<br>
+                           • 完全响应式设计，适配所有设备</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 年龄计算器. 简单易用的在线日期计算工具.</p>
+        </footer>
+    </div>
+
+    <script src="../language-switcher.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

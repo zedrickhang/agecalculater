@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calcolatore di Età Preciso - Calcola la differenza di tempo esatta tra le date con selezione ora/minuto. Mostra anni, mesi, settimane, giorni, ore, minuti, secondi. Basato su standard internazionali.">
+    <meta name="keywords" content="calcolatore età,calcolatore compleanno,calcolatore data,calcolo età,calcolatore online">
+    <meta name="author" content="Age Calculator">
+    <meta property="og:title" content="Calcolatore di Età Preciso - Strumento di Calcolo Date Online">
+    <meta property="og:description" content="Calcola la differenza di età esatta tra due date con unità di tempo dettagliate">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/it/">
+    <meta property="og:site_name" content="Age Computation">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="vi_VN">
+    
+    <!-- Hreflang per SEO multilingua -->
+   <link rel="alternate" hreflang="en" href="https://agecomputation.com/">
+    <link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/">
+    <link rel="alternate" hreflang="it" href="https://agecomputation.com/it/">
+    <link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/">
+    <link rel="alternate" hreflang="x-default" href="https://agecomputation.com/">
+    
+    <!-- URL Canonico -->
+    <link rel="canonical" href="https://agecomputation.com/it/">
+    
+    <title>Calcolatore di Età Preciso - Strumento di Calcolo Date Online</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Calcolatore di Età",
+        "description": "Calcolo preciso della differenza di età tra due date",
+        "url": "https://agecomputation.com/it/",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "it-IT",
+        "availableLanguage": [
+            {
+                "@type": "Language",
+                "name": "Chinese",
+                "alternateName": "zh-CN"
+            },
+            {
+                "@type": "Language", 
+                "name": "English",
+                "alternateName": "en-US"
+            },
+            {
+                "@type": "Language",
+                "name": "Italian", 
+                "alternateName": "it-IT"
+            },
+            {
+                "@type": "Language",
+                "name": "Vietnamese",
+                "alternateName": "vi-VN"
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                    <option value="it" selected>Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>🎂 Calcolatore di Età Preciso</h1>
+            <p class="subtitle">Calcola la differenza di tempo esatta tra due date</p>
+        </header>
+
+        <main>
+            <div class="calculator-card">
+                <form id="ageForm" class="age-form">
+                    <div class="input-group">
+                        <label for="birthDate">
+                            <span class="label-text">Data e Ora di Nascita</span>
+                            <span class="label-icon">🕐</span>
+                        </label>
+                        <input type="datetime-local" id="birthDate" name="birthDate" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="targetDate">
+                            <span class="label-text">Calcola fino a Data e Ora</span>
+                            <span class="label-icon">🎯</span>
+                        </label>
+                        <input type="datetime-local" id="targetDate" name="targetDate" required>
+                    </div>
+
+                    <button type="submit" class="calculate-btn">
+                        <span>Calcola Età</span>
+                        <span class="btn-icon">⚡</span>
+                    </button>
+                </form>
+
+                <div id="result" class="result-section" style="display: none;">
+                    <h2>Risultato del Calcolo</h2>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-value" id="years">0</span>
+                            <span class="result-label">Anni</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="months">0</span>
+                            <span class="result-label">Mesi</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="days">0</span>
+                            <span class="result-label">Giorni</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="hours">0</span>
+                            <span class="result-label">Ore</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="minutes">0</span>
+                            <span class="result-label">Minuti</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="seconds">0</span>
+                            <span class="result-label">Secondi</span>
+                        </div>
+                    </div>
+                    
+                    <div class="summary">
+                        <p id="summaryText"></p>
+                        <div class="calculation-note">
+                            <small>💡 Nota: Questo strumento utilizza il calcolo preciso dei giorni basato sugli standard internazionali occidentali di calcolo dell'età</small>
+                        </div>
+                    </div>
+                    
+                    <div class="detailed-stats">
+                        <h3>Statistiche Dettagliate</h3>
+                        <div id="detailedStats" class="stats-list">
+                            <!-- Le statistiche dettagliate verranno inserite dinamicamente tramite JavaScript -->
+                        </div>
+                        
+                        <div class="result-actions">
+                            <button id="shareBtn" class="action-btn share-btn">
+                                <span>📤</span>
+                                <span>Condividi Risultato</span>
+                            </button>
+                            <button id="saveBtn" class="action-btn save-btn">
+                                <span>💾</span>
+                                <span>Salva e Scarica</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>Istruzioni per l'Uso e Principi di Calcolo</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>📝 Come Usare</h3>
+                        <p>Seleziona data e ora di nascita e data e ora di destinazione per ottenere risultati precisi della differenza di tempo fino al secondo. Supporta il calcolo in tempo reale - i risultati si aggiornano automaticamente quando cambi l'ora.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🌍 Standard di Calcolo</h3>
+                        <p>L'età di una persona può essere calcolata diversamente in culture diverse. Questo calcolatore è basato sul sistema di età più comune. In questo sistema, l'età aumenta nel giorno del compleanno della persona. Ad esempio, l'età di una persona che ha vissuto per 3 anni e 11 mesi è 3, e la loro età aumenterà a 4 nel prossimo compleanno un mese dopo. La maggior parte dei paesi occidentali usa questo sistema di età.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🏮 Calcolo dell'Età in Culture Diverse</h3>
+                        <p>In alcune culture, l'età è espressa contando gli anni con o senza includere l'anno corrente. Ad esempio, una persona che ha vent'anni ha la stessa età di un'altra persona che è nel suo ventunesimo anno di vita. In uno dei sistemi di età tradizionali cinesi, le persone nascono all'età di 1 anno e la loro età aumenta durante il Capodanno Tradizionale Cinese piuttosto che nel loro compleanno.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📅 Note sul Calcolo di Mesi e Giorni</h3>
+                        <p>In alcune situazioni, il risultato di mesi e giorni di questo calcolatore di età può essere confuso, specialmente quando la data di inizio è la fine di un mese. Ad esempio, contiamo dal 20 febbraio al 20 marzo come un mese. Tuttavia, ci sono due modi per calcolare l'età dal 28 febbraio 2022 al 31 marzo 2022. Se consideriamo dal 28 febbraio al 28 marzo come un mese, allora il risultato è un mese e 3 giorni. Se consideriamo sia il 28 febbraio che il 31 marzo come la fine del mese, allora il risultato è un mese.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>⚙️ Il Nostro Metodo di Calcolo</h3>
+                        <p>La confusione deriva dal numero disuguale di giorni in mesi diversi. Nei nostri calcoli, usiamo il primo metodo (calcolo preciso dei giorni). Questo garantisce coerenza e precisione nei risultati di calcolo, particolarmente adatto per scenari che richiedono differenze di tempo esatte.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📱 Caratteristiche</h3>
+                        <p>• Calcolo preciso fino ai secondi<br>
+                           • Visualizzazione di multiple unità di tempo (anni, mesi, settimane, giorni, ore, minuti, secondi)<br>
+                           • Funzionalità di condivisione e salvataggio dei risultati<br>
+                           • Design completamente responsive, compatibile con tutti i dispositivi</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Calcolatore di Età. Strumento di calcolo date online semplice e facile da usare.</p>
+        </footer>
+    </div>
+
+    <script src="../language-switcher.js"></script>
+    <script src="script-it.js"></script>
+</body>
+</html> 
