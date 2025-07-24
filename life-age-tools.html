@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life & Legal Age Tools – Check your retirement age, drinking age, driving age and more. Free online age calculators for life planning and legal compliance.">
+    <meta name="keywords" content="retirement age calculator, legal drinking age checker, driving age calculator, life age tools, age checker, legal age calculator">
+    <meta name="author" content="Life Age Tools">
+    <meta property="og:title" content="Life & Legal Age Tools – Retirement, Drinking & Driving Age Calculator">
+    <meta property="og:description" content="Check your retirement age, find out if you can legally drink or drive in any country. Simple and free life age calculators.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/life-age-tools.html">
+    <meta property="og:site_name" content="Life Age Tools">
+    <meta name="msvalidate.01" content="5D2AC5CCD24CDB1D57BD567A7FEAB3D0" />
+    <meta name="google-site-verification" content="Bder59iZjd6gQJdlAdbwOFsYc91w3LcEs_A9-JpigWE" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7471466190268036" crossorigin="anonymous"></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/life-age-tools.html">
+    
+    <title>Life & Legal Age Tools – Check Your Retirement Age, Drinking Age & More</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Life & Legal Age Tools",
+        "description": "Check retirement age, legal drinking age, driving age and more life scenarios",
+        "url": "https://agecomputation.com/life-age-tools.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "en-US"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh">中文</option>
+                    <option value="en" selected>English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>🧮 Life & Legal Age Tools</h1>
+            <p class="subtitle">Check your retirement age, drinking age, driving age and more life scenarios</p>
+            
+            <!-- Navigation Bar -->
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a href="index.html" class="nav-item">
+                        <span class="nav-icon">🎂</span>
+                        <span class="nav-text">Age Calculator</span>
+                    </a>
+                    <a href="date-difference.html" class="nav-item">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">Date Difference</span>
+                    </a>
+                    <a href="life-age-tools.html" class="nav-item active">
+                        <span class="nav-icon">🧮</span>
+                        <span class="nav-text">Life Age Tools</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="tools-grid">
+                <!-- Retirement Age Calculator -->
+                <div class="tool-card">
+                    <div class="tool-icon">🎓</div>
+                    <h3>Retirement Age Calculator</h3>
+                    <p>Find out when you can officially retire based on your birth date and country</p>
+                    <button class="tool-btn" onclick="openTool('retirement')">Calculate Retirement Age</button>
+                </div>
+
+                <!-- Legal Drinking Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">🍷</div>
+                    <h3>Legal Drinking Age Checker</h3>
+                    <p>Check if you've reached the legal drinking age in your country</p>
+                    <button class="tool-btn" onclick="openTool('drinking')">Check Drinking Age</button>
+                </div>
+
+                <!-- Driving Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">🚗</div>
+                    <h3>Driving Age Checker</h3>
+                    <p>Find out when you can apply for a driver's license</p>
+                    <button class="tool-btn" onclick="openTool('driving')">Check Driving Age</button>
+                </div>
+
+                <!-- Voting Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">🗳️</div>
+                    <h3>Voting Age Checker</h3>
+                    <p>Check if you're eligible to vote in your country</p>
+                    <button class="tool-btn" onclick="openTool('voting')">Check Voting Age</button>
+                </div>
+
+                <!-- Working Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">💼</div>
+                    <h3>Working Age Checker</h3>
+                    <p>Find out the minimum working age in your country</p>
+                    <button class="tool-btn" onclick="openTool('working')">Check Working Age</button>
+                </div>
+
+                <!-- Marriage Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">💍</div>
+                    <h3>Marriage Age Checker</h3>
+                    <p>Check the legal marriage age in your country</p>
+                    <button class="tool-btn" onclick="openTool('marriage')">Check Marriage Age</button>
+                </div>
+            </div>
+
+            <!-- Tool Modal -->
+            <div id="toolModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div id="toolContent">
+                        <!-- Tool content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>How to Use Life Age Tools</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>📝 Quick Guide</h3>
+                        <p>Select any tool above, enter your birth date and country, then get instant results about your eligibility for various life events and legal requirements.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🎯 Who Needs This?</h3>
+                        <p>• <strong>Teenagers:</strong> Planning for driving license, first job, or college<br>
+                           • <strong>Parents:</strong> Understanding age requirements for their children<br>
+                           • <strong>Immigrants/Students:</strong> Learning about age laws in new countries<br>
+                           • <strong>Everyone:</strong> Planning for retirement and major life milestones</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🌍 Global Coverage</h3>
+                        <p>Our tools cover age requirements for major countries including USA, UK, Canada, Australia, Germany, France, Japan, and many more. Data is regularly updated to reflect current laws.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>⚖️ Legal Disclaimer</h3>
+                        <p>While we strive for accuracy, age requirements may vary by region and can change over time. Always verify with official government sources for the most current information.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Life Age Tools. Free online age requirement calculators for life planning.</p>
+        </footer>
+    </div>
+
+    <script src="language-switcher.js"></script>
+    <script>
+        // Set current language for the page
+        window.currentPageLanguage = 'en';
+    </script>
+    <script src="life-age-tools.js"></script>
+</body>
+</html>

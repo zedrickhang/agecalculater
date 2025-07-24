@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use our free online date difference calculator to find the exact time between two dates in years, months, weeks, days, hours, minutes and seconds. Perfect for anniversaries, birthdays, project deadlines and more.">
+    <meta name="keywords" content="date difference calculator,days between two dates,how many days since,date duration calculator,time between dates,date interval calculator">
+    <meta name="author" content="Date Calculator">
+    <meta property="og:title" content="Date Difference Calculator – How Many Days Between Two Dates?">
+    <meta property="og:description" content="Calculate the exact time difference between any two dates. Free online tool for anniversaries, birthdays, project deadlines and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/date-difference.html">
+    <meta property="og:site_name" content="Date Calculator">
+    <meta name="msvalidate.01" content="5D2AC5CCD24CDB1D57BD567A7FEAB3D0" />
+    <meta name="google-site-verification" content="Bder59iZjd6gQJdlAdbwOFsYc91w3LcEs_A9-JpigWE" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7471466190268036" crossorigin="anonymous"></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/date-difference.html">
+    
+    <title>Date Difference Calculator – How Many Days Between Two Dates?</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Date Difference Calculator",
+        "description": "Calculate the exact time difference between any two dates",
+        "url": "https://agecomputation.com/date-difference.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "en-US"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh">中文</option>
+                    <option value="en" selected>English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>📅 Date Difference Calculator</h1>
+            <p class="subtitle">Find the exact time between any two dates in years, months, weeks, days, hours, minutes and seconds</p>
+            
+            <!-- Navigation Bar -->
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a href="index.html" class="nav-item">
+                        <span class="nav-icon">🎂</span>
+                        <span class="nav-text">Age Calculator</span>
+                    </a>
+                    <a href="date-difference.html" class="nav-item active">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">Date Difference</span>
+                    </a>
+                    <a href="life-age-tools.html" class="nav-item">
+                        <span class="nav-icon">🧮</span>
+                        <span class="nav-text">Life Age Tools</span>
+                    </a>
+                </div>
+            </nav>
+            
+           
+        </header>
+
+        <main>
+            <div class="calculator-card">
+                <form id="dateDifferenceForm" class="date-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="startDate">
+                                <span class="label-text">Start Date</span>
+                                <span class="label-icon">📅</span>
+                            </label>
+                            <input type="date" id="startDate" name="startDate" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="endDate">
+                                <span class="label-text">End Date</span>
+                                <span class="label-icon">🎯</span>
+                            </label>
+                            <input type="date" id="endDate" name="endDate" required>
+                        </div>
+                    </div>
+
+                    <div class="time-toggle">
+                        <label class="toggle-label">
+                            <input type="checkbox" id="includeTime" name="includeTime">
+                            <span class="toggle-text">Include Time (Hours, Minutes, Seconds)</span>
+                        </label>
+                    </div>
+
+                    <div id="timeInputs" class="time-inputs" style="display: none;">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="startTime">
+                                    <span class="label-text">Start Time</span>
+                                    <span class="label-icon">🕐</span>
+                                </label>
+                                <input type="time" id="startTime" name="startTime" step="1" value="00:00:00">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="endTime">
+                                    <span class="label-text">End Time</span>
+                                    <span class="label-icon">⏰</span>
+                                </label>
+                                <input type="time" id="endTime" name="endTime" step="1" value="00:00:00">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="calculate-btn">
+                            <span>Calculate Difference</span>
+                            <span class="btn-icon">⚡</span>
+                        </button>
+                        <button type="button" id="resetBtn" class="reset-btn">
+                            <span>Reset</span>
+                            <span class="btn-icon">🔄</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="result" class="result-section" style="display: none;">
+                    <h2>📊 Date Difference Result</h2>
+                    
+                    <div class="main-result">
+                        <div class="result-summary" id="resultSummary">
+                            <!-- Main result will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-value" id="years">0</span>
+                            <span class="result-label">Years</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="months">0</span>
+                            <span class="result-label">Months</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="weeks">0</span>
+                            <span class="result-label">Weeks</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="days">0</span>
+                            <span class="result-label">Days</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="hours">0</span>
+                            <span class="result-label">Hours</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="minutes">0</span>
+                            <span class="result-label">Minutes</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="seconds">0</span>
+                            <span class="result-label">Seconds</span>
+                        </div>
+                    </div>
+
+                    <div class="detailed-stats">
+                        <h3>📈 Detailed Statistics</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-label">📅 Total Days:</span>
+                                <span class="stat-value" id="totalDays">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">💼 Weekdays:</span>
+                                <span class="stat-value" id="weekdays">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">🏖️ Weekends:</span>
+                                <span class="stat-value" id="weekends">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">🌅 Start Day:</span>
+                                <span class="stat-value" id="startDay">-</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">🌇 End Day:</span>
+                                <span class="stat-value" id="endDay">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fun-facts" id="funFacts">
+                        <h3>🎉 Fun Facts</h3>
+                        <div class="fact-content">
+                            <!-- Fun facts will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="result-actions">
+                        <button id="copyBtn" class="action-btn copy-btn">
+                            <span>📋</span>
+                            <span>Copy Result</span>
+                        </button>
+                        <button id="shareBtn" class="action-btn share-btn">
+                            <span>📤</span>
+                            <span>Share Result</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>How to Calculate Days Between Dates?</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>📝 How to Use</h3>
+                        <p>Simply select your start date and end date, optionally include specific times for more precise calculations. The calculator will automatically compute the exact time difference in multiple units.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🎯 Common Uses</h3>
+                        <p>• <strong>Anniversaries:</strong> Calculate how long you've been married, dating, or working<br>
+                           • <strong>Birthdays:</strong> Find out exactly how old someone is<br>
+                           • <strong>Project Deadlines:</strong> Track time remaining for important projects<br>
+                           • <strong>Historical Events:</strong> Calculate time since significant events<br>
+                           • <strong>Business Planning:</strong> Plan timelines for meetings and events</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>⚙️ Calculation Method</h3>
+                        <p>Our calculator uses precise date arithmetic to ensure accurate results. It accounts for leap years, varying month lengths, and daylight saving time changes when time is included.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📊 What You Get</h3>
+                        <p>• Exact time difference in years, months, weeks, days, hours, minutes, and seconds<br>
+                           • Total number of days and breakdown of weekdays vs weekends<br>
+                           • Day of the week for both start and end dates<br>
+                           • Fun facts about the time period<br>
+                           • Easy sharing and copying of results</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Date Calculator. Free online date difference calculation tool.</p>
+        </footer>
+    </div>
+
+    <script src="language-switcher.js"></script>
+    <script>
+        // Set current language for the page
+        window.currentPageLanguage = 'en';
+    </script>
+    <script src="date-difference.js"></script>
+</body>
+</html> 

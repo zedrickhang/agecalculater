@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sử dụng máy tính chênh lệch ngày tháng trực tuyến miễn phí của chúng tôi để tìm chênh lệch thời gian chính xác giữa hai ngày theo năm, tháng, tuần, ngày, giờ, phút và giây. Hoàn hảo cho kỷ niệm, sinh nhật, hạn chót dự án và nhiều hơn nữa.">
+    <meta name="keywords" content="máy tính chênh lệch ngày,ngày giữa hai ngày,bao nhiêu ngày từ,máy tính thời gian ngày,máy tính khoảng thời gian">
+    <meta name="author" content="Máy Tính Ngày">
+    <meta property="og:title" content="Máy Tính Chênh Lệch Ngày – Bao Nhiêu Ngày Giữa Hai Ngày?">
+    <meta property="og:description" content="Tính chênh lệch thời gian chính xác giữa hai ngày bất kỳ. Công cụ trực tuyến miễn phí cho kỷ niệm, sinh nhật, hạn chót dự án và nhiều hơn nữa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/vi/date-difference.html">
+    <meta property="og:site_name" content="Máy Tính Ngày">
+    <meta name="msvalidate.01" content="5D2AC5CCD24CDB1D57BD567A7FEAB3D0" />
+    <meta name="google-site-verification" content="Bder59iZjd6gQJdlAdbwOFsYc91w3LcEs_A9-JpigWE" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7471466190268036" crossorigin="anonymous"></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/vi/date-difference.html">
+    
+    <title>Máy Tính Chênh Lệch Ngày – Bao Nhiêu Ngày Giữa Hai Ngày?</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Máy Tính Chênh Lệch Ngày",
+        "description": "Tính chênh lệch thời gian chính xác giữa hai ngày",
+        "url": "https://agecomputation.com/vi/date-difference.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "vi-VN"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi" selected>Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>📅 Máy Tính Chênh Lệch Ngày</h1>
+            <p class="subtitle">Tìm thời gian chính xác giữa hai ngày theo năm, tháng, tuần, ngày, giờ, phút và giây</p>
+            
+            <!-- Navigation Bar -->
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a href="index.html" class="nav-item">
+                        <span class="nav-icon">🎂</span>
+                        <span class="nav-text">Máy Tính Tuổi</span>
+                    </a>
+                    <a href="date-difference.html" class="nav-item active">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">Chênh Lệch Ngày</span>
+                    </a>
+                    <a href="life-age-tools.html" class="nav-item">
+                        <span class="nav-icon">🧮</span>
+                        <span class="nav-text">Công Cụ Tuổi</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="calculator-card">
+                <form id="dateDifferenceForm" class="date-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="startDate">
+                                <span class="label-text">Ngày Bắt Đầu</span>
+                                <span class="label-icon">📅</span>
+                            </label>
+                            <input type="date" id="startDate" name="startDate" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="endDate">
+                                <span class="label-text">Ngày Kết Thúc</span>
+                                <span class="label-icon">🎯</span>
+                            </label>
+                            <input type="date" id="endDate" name="endDate" required>
+                        </div>
+                    </div>
+
+                    <div class="time-toggle">
+                        <label class="toggle-label">
+                            <input type="checkbox" id="includeTime" name="includeTime">
+                            <span class="toggle-text">Bao Gồm Thời Gian (Giờ, Phút, Giây)</span>
+                        </label>
+                    </div>
+
+                    <div id="timeInputs" class="time-inputs" style="display: none;">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="startTime">
+                                    <span class="label-text">Giờ Bắt Đầu</span>
+                                    <span class="label-icon">🕐</span>
+                                </label>
+                                <input type="time" id="startTime" name="startTime" step="1" value="00:00:00">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="endTime">
+                                    <span class="label-text">Giờ Kết Thúc</span>
+                                    <span class="label-icon">⏰</span>
+                                </label>
+                                <input type="time" id="endTime" name="endTime" step="1" value="00:00:00">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="calculate-btn">
+                            <span>Tính Chênh Lệch</span>
+                            <span class="btn-icon">⚡</span>
+                        </button>
+                        <button type="button" id="resetBtn" class="reset-btn">
+                            <span>Đặt Lại</span>
+                            <span class="btn-icon">🔄</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="result" class="result-section" style="display: none;">
+                    <h2>📊 Kết Quả Chênh Lệch Ngày</h2>
+                    
+                    <div class="main-result">
+                        <div class="result-summary" id="resultSummary">
+                            <!-- Kết quả chính sẽ được chèn vào đây -->
+                        </div>
+                    </div>
+
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-value" id="years">0</span>
+                            <span class="result-label">Năm</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="months">0</span>
+                            <span class="result-label">Tháng</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="weeks">0</span>
+                            <span class="result-label">Tuần</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="days">0</span>
+                            <span class="result-label">Ngày</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="hours">0</span>
+                            <span class="result-label">Giờ</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="minutes">0</span>
+                            <span class="result-label">Phút</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="seconds">0</span>
+                            <span class="result-label">Giây</span>
+                        </div>
+                    </div>
+
+                    <div class="detailed-stats">
+                        <h3>📈 Thống Kê Chi Tiết</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-label">📅 Tổng Ngày:</span>
+                                <span class="stat-value" id="totalDays">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">💼 Ngày Làm Việc:</span>
+                                <span class="stat-value" id="weekdays">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">🏖️ Cuối Tuần:</span>
+                                <span class="stat-value" id="weekends">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">🌅 Ngày Bắt Đầu:</span>
+                                <span class="stat-value" id="startDay">-</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">🌇 Ngày Kết Thúc:</span>
+                                <span class="stat-value" id="endDay">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fun-facts" id="funFacts">
+                        <h3>🎉 Sự Thật Thú Vị</h3>
+                        <div class="fact-content">
+                            <!-- Sự thật thú vị sẽ được chèn vào đây -->
+                        </div>
+                    </div>
+
+                    <div class="result-actions">
+                        <button id="copyBtn" class="action-btn copy-btn">
+                            <span>📋</span>
+                            <span>Sao Chép Kết Quả</span>
+                        </button>
+                        <button id="shareBtn" class="action-btn share-btn">
+                            <span>📤</span>
+                            <span>Chia Sẻ Kết Quả</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>Làm Thế Nào Để Tính Ngày Giữa Hai Ngày?</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>📝 Cách Sử Dụng</h3>
+                        <p>Chỉ cần chọn ngày bắt đầu và ngày kết thúc, tùy chọn bao gồm thời gian cụ thể để có tính toán chính xác hơn. Máy tính sẽ tự động tính toán chênh lệch thời gian chính xác theo nhiều đơn vị.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🎯 Công Dụng Phổ Biến</h3>
+                        <p>• <strong>Kỷ Niệm:</strong> Tính thời gian bạn đã kết hôn, hẹn hò hoặc làm việc<br>
+                           • <strong>Sinh Nhật:</strong> Tìm ra chính xác tuổi của ai đó<br>
+                           • <strong>Hạn Chót Dự Án:</strong> Theo dõi thời gian còn lại cho các dự án quan trọng<br>
+                           • <strong>Sự Kiện Lịch Sử:</strong> Tính thời gian từ các sự kiện quan trọng<br>
+                           • <strong>Lập Kế Hoạch Kinh Doanh:</strong> Lập lịch trình cho các cuộc họp và sự kiện</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>⚙️ Phương Pháp Tính Toán</h3>
+                        <p>Máy tính của chúng tôi sử dụng phép tính ngày tháng chính xác để đảm bảo kết quả chính xác. Nó tính đến năm nhuận, độ dài khác nhau của các tháng và thay đổi giờ mùa hè khi bao gồm thời gian.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📊 Những Gì Bạn Nhận Được</h3>
+                        <p>• Chênh lệch thời gian chính xác theo năm, tháng, tuần, ngày, giờ, phút và giây<br>
+                           • Tổng số ngày và phân tích ngày làm việc so với cuối tuần<br>
+                           • Ngày trong tuần cho cả ngày bắt đầu và kết thúc<br>
+                           • Sự thật thú vị về khoảng thời gian<br>
+                           • Dễ dàng chia sẻ và sao chép kết quả</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Máy Tính Ngày. Công cụ tính chênh lệch ngày trực tuyến miễn phí.</p>
+        </footer>
+    </div>
+
+    <script src="../language-switcher.js"></script>
+    <script>
+        // Đặt ngôn ngữ hiện tại cho trang
+        window.currentPageLanguage = 'vi';
+    </script>
+    <script src="date-difference-vi.js"></script>
+</body>
+</html> 

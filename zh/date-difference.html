@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="使用我们的免费在线日期差计算器，精确计算两个日期之间的时间差，包括年、月、周、天、小时、分钟和秒。适用于纪念日、生日、项目截止日期等。">
+    <meta name="keywords" content="日期差计算器,两个日期之间的天数,计算日期差,时间间隔计算器,日期持续时间">
+    <meta name="author" content="日期计算器">
+    <meta property="og:title" content="日期差计算器 – 计算两个日期之间的天数">
+    <meta property="og:description" content="精确计算任意两个日期之间的时间差。免费在线工具，适用于纪念日、生日、项目截止日期等。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/zh/date-difference.html">
+    <meta property="og:site_name" content="日期计算器">
+    <meta name="msvalidate.01" content="5D2AC5CCD24CDB1D57BD567A7FEAB3D0" />
+    <meta name="google-site-verification" content="Bder59iZjd6gQJdlAdbwOFsYc91w3LcEs_A9-JpigWE" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7471466190268036" crossorigin="anonymous"></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/zh/date-difference.html">
+    
+    <title>日期差计算器 – 计算两个日期之间的天数</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "日期差计算器",
+        "description": "精确计算两个日期之间的时间差",
+        "url": "https://agecomputation.com/zh/date-difference.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "zh-CN"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh" selected>中文</option>
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>📅 日期差计算器</h1>
+            <p class="subtitle">精确计算两个日期之间的时间差，包括年、月、周、天、小时、分钟和秒</p>
+            
+            <!-- Navigation Bar -->
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a href="index.html" class="nav-item">
+                        <span class="nav-icon">🎂</span>
+                        <span class="nav-text">年龄计算器</span>
+                    </a>
+                    <a href="date-difference.html" class="nav-item active">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">日期差计算</span>
+                    </a>
+                    <a href="life-age-tools.html" class="nav-item">
+                        <span class="nav-icon">🧮</span>
+                        <span class="nav-text">生活年龄工具</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="calculator-card">
+                <form id="dateDifferenceForm" class="date-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="startDate">
+                                <span class="label-text">开始日期</span>
+                                <span class="label-icon">📅</span>
+                            </label>
+                            <input type="date" id="startDate" name="startDate" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="endDate">
+                                <span class="label-text">结束日期</span>
+                                <span class="label-icon">🎯</span>
+                            </label>
+                            <input type="date" id="endDate" name="endDate" required>
+                        </div>
+                    </div>
+
+                    <div class="time-toggle">
+                        <label class="toggle-label">
+                            <input type="checkbox" id="includeTime" name="includeTime">
+                            <span class="toggle-text">包含时间（小时、分钟、秒）</span>
+                        </label>
+                    </div>
+
+                    <div id="timeInputs" class="time-inputs" style="display: none;">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="startTime">
+                                    <span class="label-text">开始时间</span>
+                                    <span class="label-icon">🕐</span>
+                                </label>
+                                <input type="time" id="startTime" name="startTime" step="1" value="00:00:00">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="endTime">
+                                    <span class="label-text">结束时间</span>
+                                    <span class="label-icon">⏰</span>
+                                </label>
+                                <input type="time" id="endTime" name="endTime" step="1" value="00:00:00">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="calculate-btn">
+                            <span>计算时间差</span>
+                            <span class="btn-icon">⚡</span>
+                        </button>
+                        <button type="button" id="resetBtn" class="reset-btn">
+                            <span>重置</span>
+                            <span class="btn-icon">🔄</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="result" class="result-section" style="display: none;">
+                    <h2>📊 日期差计算结果</h2>
+                    
+                    <div class="main-result">
+                        <div class="result-summary" id="resultSummary">
+                            <!-- 主要结果将在这里插入 -->
+                        </div>
+                    </div>
+
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-value" id="years">0</span>
+                            <span class="result-label">年</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="months">0</span>
+                            <span class="result-label">月</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="weeks">0</span>
+                            <span class="result-label">周</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="days">0</span>
+                            <span class="result-label">天</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="hours">0</span>
+                            <span class="result-label">小时</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="minutes">0</span>
+                            <span class="result-label">分钟</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value" id="seconds">0</span>
+                            <span class="result-label">秒</span>
+                        </div>
+                    </div>
+
+                    <div class="detailed-stats">
+                        <h3>📈 详细统计</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-label">📅 总天数:</span>
+                                <span class="stat-value" id="totalDays">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">💼 工作日:</span>
+                                <span class="stat-value" id="weekdays">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">🏖️ 周末:</span>
+                                <span class="stat-value" id="weekends">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">🌅 开始日:</span>
+                                <span class="stat-value" id="startDay">-</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">🌇 结束日:</span>
+                                <span class="stat-value" id="endDay">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fun-facts" id="funFacts">
+                        <h3>🎉 有趣事实</h3>
+                        <div class="fact-content">
+                            <!-- 有趣事实将在这里插入 -->
+                        </div>
+                    </div>
+
+                    <div class="result-actions">
+                        <button id="copyBtn" class="action-btn copy-btn">
+                            <span>📋</span>
+                            <span>复制结果</span>
+                        </button>
+                        <button id="shareBtn" class="action-btn share-btn">
+                            <span>📤</span>
+                            <span>分享结果</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>如何计算两个日期之间的天数？</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>📝 使用方法</h3>
+                        <p>只需选择开始日期和结束日期，可选择包含具体时间以获得更精确的计算结果。计算器会自动计算多个时间单位的精确时间差。</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🎯 常见用途</h3>
+                        <p>• <strong>纪念日:</strong> 计算结婚、恋爱或工作的时间长度<br>
+                           • <strong>生日:</strong> 精确计算某人的年龄<br>
+                           • <strong>项目截止日期:</strong> 跟踪重要项目的剩余时间<br>
+                           • <strong>历史事件:</strong> 计算重大事件发生后的时间<br>
+                           • <strong>商业规划:</strong> 规划会议和事件的时间线</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>⚙️ 计算方法</h3>
+                        <p>我们的计算器使用精确的日期算术来确保准确的结果。它考虑了闰年、不同月份的天数，以及包含时间时的夏令时变化。</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📊 您将获得</h3>
+                        <p>• 年、月、周、天、小时、分钟和秒的精确时间差<br>
+                           • 总天数以及工作日与周末的细分<br>
+                           • 开始和结束日期的星期几<br>
+                           • 关于时间段的趣味事实<br>
+                           • 轻松分享和复制结果</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 日期计算器。免费在线日期差计算工具。</p>
+        </footer>
+    </div>
+
+    <script src="../language-switcher.js"></script>
+    <script>
+        // 设置页面的当前语言
+        window.currentPageLanguage = 'zh';
+    </script>
+    <script src="date-difference-zh.js"></script>
+</body>
+</html> 
