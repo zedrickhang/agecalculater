@@ -4,25 +4,29 @@ const LANGUAGE_CONFIG = {
         file: 'zh/index.html',
         url: '/zh/',
         name: '中文',
-        dateDifferenceUrl: '/zh/date-difference.html'
+        dateDifferenceUrl: '/zh/date-difference.html',
+        lifeAgeToolsUrl: '/zh/life-age-tools.html'
     },
     en: {
         file: 'index.html',
         url: '/',
         name: 'English',
-        dateDifferenceUrl: '/date-difference.html'
+        dateDifferenceUrl: '/date-difference.html',
+        lifeAgeToolsUrl: '/life-age-tools.html'
     },
     it: {
         file: 'it/index.html',
         url: '/it/',
         name: 'Italiano',
-        dateDifferenceUrl: '/it/date-difference.html'
+        dateDifferenceUrl: '/it/date-difference.html',
+        lifeAgeToolsUrl: '/it/life-age-tools.html'
     },
     vi: {
         file: 'vi/index.html',
         url: '/vi/',
         name: 'Tiếng Việt',
-        dateDifferenceUrl: '/vi/date-difference.html'
+        dateDifferenceUrl: '/vi/date-difference.html',
+        lifeAgeToolsUrl: '/vi/life-age-tools.html'
     }
 };
 
@@ -106,9 +110,11 @@ class LanguageSwitcher {
                                window.location.hostname !== '127.0.0.1' &&
                                window.location.hostname !== '';
             
-            // Check if we're on the date difference page
+            // Check if we're on specific pages
             const isDateDifferencePage = window.location.pathname.includes('date-difference') || 
                                        window.location.href.includes('date-difference');
+            const isLifeAgeToolsPage = window.location.pathname.includes('life-age-tools') || 
+                                      window.location.href.includes('life-age-tools');
             
             if (isProduction) {
                 // Production environment uses SEO-friendly URLs
@@ -117,6 +123,8 @@ class LanguageSwitcher {
                 
                 if (isDateDifferencePage) {
                     newUrl = baseUrl + config.dateDifferenceUrl;
+                } else if (isLifeAgeToolsPage) {
+                    newUrl = baseUrl + config.lifeAgeToolsUrl;
                 } else {
                     newUrl = baseUrl + config.url;
                 }
@@ -129,6 +137,8 @@ class LanguageSwitcher {
                 
                 if (isDateDifferencePage) {
                     newUrl = config.dateDifferenceUrl.replace('/', '') + (urlParams.toString() ? '?' + urlParams.toString() : '');
+                } else if (isLifeAgeToolsPage) {
+                    newUrl = config.lifeAgeToolsUrl.replace('/', '') + (urlParams.toString() ? '?' + urlParams.toString() : '');
                 } else {
                     newUrl = config.file + (urlParams.toString() ? '?' + urlParams.toString() : '');
                 }
