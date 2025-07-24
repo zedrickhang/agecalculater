@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="生活与法定年龄工具 – 检查您的退休年龄、饮酒年龄、驾驶年龄等。免费在线年龄计算器，用于生活规划和法律合规。">
+    <meta name="keywords" content="退休年龄计算器,法定饮酒年龄检查器,驾驶年龄计算器,生活年龄工具,年龄检查器,法定年龄计算器">
+    <meta name="author" content="生活年龄工具">
+    <meta property="og:title" content="生活与法定年龄工具 – 退休、饮酒和驾驶年龄计算器">
+    <meta property="og:description" content="检查您的退休年龄，了解您是否可以在任何国家合法饮酒或驾驶。简单免费的生活年龄计算器。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/zh/life-age-tools.html">
+    <meta property="og:site_name" content="生活年龄工具">
+    <meta name="msvalidate.01" content="5D2AC5CCD24CDB1D57BD567A7FEAB3D0" />
+    <meta name="google-site-verification" content="Bder59iZjd6gQJdlAdbwOFsYc91w3LcEs_A9-JpigWE" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7471466190268036" crossorigin="anonymous"></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/zh/life-age-tools.html">
+    
+    <title>生活与法定年龄工具 – 检查您的退休年龄、饮酒年龄等</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "生活与法定年龄工具",
+        "description": "检查退休年龄、法定饮酒年龄、驾驶年龄等生活场景",
+        "url": "https://agecomputation.com/zh/life-age-tools.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "zh-CN"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh" selected>中文</option>
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>🧮 生活与法定年龄工具</h1>
+            <p class="subtitle">检查您的退休年龄、饮酒年龄、驾驶年龄等生活场景</p>
+            
+            <!-- Navigation Bar -->
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a href="index.html" class="nav-item">
+                        <span class="nav-icon">🎂</span>
+                        <span class="nav-text">年龄计算器</span>
+                    </a>
+                    <a href="date-difference.html" class="nav-item">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">日期差计算</span>
+                    </a>
+                    <a href="life-age-tools.html" class="nav-item active">
+                        <span class="nav-icon">🧮</span>
+                        <span class="nav-text">生活年龄工具</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="tools-grid">
+                <!-- Retirement Age Calculator -->
+                <div class="tool-card">
+                    <div class="tool-icon">🎓</div>
+                    <h3>退休年龄计算器</h3>
+                    <p>根据您的出生日期和国家，了解您何时可以正式退休</p>
+                    <button class="tool-btn" onclick="openTool('retirement')">计算退休年龄</button>
+                </div>
+
+                <!-- Legal Drinking Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">🍷</div>
+                    <h3>法定饮酒年龄检查器</h3>
+                    <p>检查您是否已达到所在国家的法定饮酒年龄</p>
+                    <button class="tool-btn" onclick="openTool('drinking')">检查饮酒年龄</button>
+                </div>
+
+                <!-- Driving Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">🚗</div>
+                    <h3>驾驶年龄检查器</h3>
+                    <p>了解您何时可以申请驾驶执照</p>
+                    <button class="tool-btn" onclick="openTool('driving')">检查驾驶年龄</button>
+                </div>
+
+                <!-- Voting Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">🗳️</div>
+                    <h3>投票年龄检查器</h3>
+                    <p>检查您是否有资格在所在国家投票</p>
+                    <button class="tool-btn" onclick="openTool('voting')">检查投票年龄</button>
+                </div>
+
+                <!-- Working Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">💼</div>
+                    <h3>工作年龄检查器</h3>
+                    <p>了解您所在国家的最低工作年龄</p>
+                    <button class="tool-btn" onclick="openTool('working')">检查工作年龄</button>
+                </div>
+
+                <!-- Marriage Age Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">💍</div>
+                    <h3>结婚年龄检查器</h3>
+                    <p>检查您所在国家的法定结婚年龄</p>
+                    <button class="tool-btn" onclick="openTool('marriage')">检查结婚年龄</button>
+                </div>
+            </div>
+
+            <!-- Tool Modal -->
+            <div id="toolModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div id="toolContent">
+                        <!-- Tool content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>如何使用生活年龄工具</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>📝 快速指南</h3>
+                        <p>选择上面的任何工具，输入您的出生日期和国家，然后立即获得关于您是否符合各种生活事件和法律要求的结果。</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🎯 谁需要这个？</h3>
+                        <p>• <strong>青少年：</strong>规划驾驶执照、第一份工作或大学<br>
+                           • <strong>父母：</strong>了解子女的年龄要求<br>
+                           • <strong>移民/学生：</strong>了解新国家的年龄法律<br>
+                           • <strong>所有人：</strong>规划退休和重要生活里程碑</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🌍 全球覆盖</h3>
+                        <p>我们的工具涵盖主要国家的年龄要求，包括美国、英国、加拿大、澳大利亚、德国、法国、日本等。数据定期更新以反映当前法律。</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>⚖️ 法律免责声明</h3>
+                        <p>虽然我们努力确保准确性，但年龄要求可能因地区而异，并可能随时间变化。请始终与官方政府来源核实以获取最新信息。</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 生活年龄工具。免费在线年龄要求计算器，用于生活规划。</p>
+        </footer>
+    </div>
+
+    <script src="../language-switcher.js"></script>
+    <script>
+        // Set current language for the page
+        window.currentPageLanguage = 'zh';
+    </script>
+    <script src="life-age-tools-zh.js"></script>
+</body>
+</html> 
