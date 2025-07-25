@@ -1956,3 +1956,243 @@ footer {
         font-size: 1.1rem;
     }
 } 
+
+/* Detailed Tools Section Styles */
+.detailed-tools-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.detailed-tools-section h2 {
+    color: #2d3748;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.detailed-tools-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+.tool-description {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #f8fafc;
+    border-radius: 15px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.tool-description:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    background: #f1f5f9;
+}
+
+.tool-description h3 {
+    color: #2d3748;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.description-content p {
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.description-content p strong {
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.description-content ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.description-content li {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.description-content li strong {
+    color: #2d3748;
+    font-weight: 600;
+}
+
+/* Additional Info Section Styles */
+.additional-info-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.additional-info-section h2 {
+    color: #2d3748;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.additional-info-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
+    background: #f1f5f9;
+    border-color: #cbd5e0;
+}
+
+.info-card h3 {
+    color: #2d3748;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-card p {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 768px) {
+    .detailed-tools-section,
+    .additional-info-section {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    .detailed-tools-section h2,
+    .additional-info-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .tool-description {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .tool-description h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .info-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .detailed-tools-section,
+    .additional-info-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .detailed-tools-section h2,
+    .additional-info-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .tool-description {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .tool-description h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .description-content p {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+
+    .description-content li {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+
+    .info-card {
+        padding: 15px;
+    }
+
+    .info-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .info-card p {
+        font-size: 0.9rem;
+    }
+} 
