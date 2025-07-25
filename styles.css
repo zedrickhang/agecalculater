@@ -138,6 +138,32 @@ main {
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
+/* Special styling for number input in special day calculator */
+.input-group input[type="number"] {
+    width: 100%;
+    padding: 18px 25px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    background: white;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+
+.input-group input[type="number"]:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.input-group input[type="number"]::placeholder {
+    color: #a0aec0;
+    font-size: 1rem;
+}
+
 .calculate-btn {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -1330,7 +1356,7 @@ footer {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -2603,6 +2629,12 @@ footer {
         margin-bottom: 15px;
     }
 
+    .input-group input[type="number"] {
+        padding: 16px 20px;
+        font-size: 1rem;
+        min-height: 55px;
+    }
+
     .milestones-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         gap: 12px;
@@ -2708,6 +2740,12 @@ footer {
     .form-section h3 {
         font-size: 1.1rem;
         margin-bottom: 12px;
+    }
+
+    .input-group input[type="number"] {
+        padding: 14px 18px;
+        font-size: 0.95rem;
+        min-height: 50px;
     }
 
     .milestones-grid {
