@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="趣味年龄游戏 – 与名人比年龄、朋友年龄PK挑战、AI生日贺卡生成器。互动年龄工具，娱乐与分享并存。">
+    <meta name="keywords" content="生日贺卡生成器,名人年龄比较,年龄挑战工具,趣味年龄游戏,年龄比较,名人生日,生日卡片制作">
+    <meta name="author" content="趣味年龄游戏">
+    <meta property="og:title" content="趣味年龄游戏 – 比较、挑战、庆祝！">
+    <meta property="og:description" content="找出哪些名人与你同龄，与朋友进行年龄挑战，或生成个性化AI生日贺卡分享！">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/zh/fun-age-games">
+    <meta property="og:site_name" content="趣味年龄游戏">
+    <meta name="msvalidate.01" content="5D2AC5CCD24CDB1D57BD567A7FEAB3D0" />
+    <meta name="google-site-verification" content="Bder59iZjd6gQJdlAdbwOFsYc91w3LcEs_A9-JpigWE" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7471466190268036" crossorigin="anonymous"></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/zh/fun-age-games">
+       <!-- Hreflang for multilingual SEO -->
+       <link rel="alternate" hreflang="en" href="https://agecomputation.com/fun-age-games">
+       <link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/fun-age-games">
+       <link rel="alternate" hreflang="it" href="https://agecomputation.com/it/fun-age-games">
+       <link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/fun-age-games">
+       <link rel="alternate" hreflang="x-default" href="https://agecomputation.com/fun-age-games">
+    
+    <title>趣味年龄游戏 – 比较、挑战、庆祝！</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "趣味年龄游戏",
+        "description": "与名人比年龄、朋友挑战、生成个性化生日贺卡",
+        "url": "https://agecomputation.com/zh/fun-age-games.html",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": "All",
+        "inLanguage": "zh-CN",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "CNY"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh" selected>中文</option>
+                    <option value="en">English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>🎮 趣味年龄游戏 – 比较、挑战、庆祝！</h1>
+            <p class="subtitle">互动年龄工具，娱乐与社交分享并存</p>
+            
+            <!-- Navigation Bar -->
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a href="https://agecomputation.com/zh/" class="nav-item">
+                        <span class="nav-icon">🎂</span>
+                        <span class="nav-text">年龄计算器</span>
+                    </a>
+                    <a href="https://agecomputation.com/zh/date-difference" class="nav-item">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">日期差计算</span>
+                    </a>
+                    <a href="https://agecomputation.com/zh/life-age-tools" class="nav-item">
+                        <span class="nav-icon">🧮</span>
+                        <span class="nav-text">生命年龄工具</span>
+                    </a>
+                    <a href="https://agecomputation.com/zh/tools-summary" class="nav-item">
+                        <span class="nav-icon">🛠️</span>
+                        <span class="nav-text">工具汇总</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="games-grid">
+                <!-- Celebrity Age Comparator -->
+                <div class="game-card">
+                    <div class="game-icon">⭐</div>
+                    <h3>谁和你同岁？</h3>
+                    <p>发现哪些名人与你同年出生！在众多知名人士中找到你的年龄双胞胎。</p>
+                    <button class="game-btn" onclick="openGame('celebrity')">与名人比年龄</button>
+                </div>
+
+                <!-- Age Challenge Tool -->
+                <div class="game-card">
+                    <div class="game-icon">🏆</div>
+                    <h3>年龄挑战工具</h3>
+                    <p>挑战你的朋友！精确比较年龄到天、小时和分钟。看看谁更年长？</p>
+                    <button class="game-btn" onclick="openGame('challenge')">开始年龄挑战</button>
+                </div>
+
+                <!-- AI Birthday Card Generator -->
+                <div class="game-card">
+                    <div class="game-icon">🎨</div>
+                    <h3>AI生日贺卡</h3>
+                    <p>生成个性化AI生日贺卡，包含定制消息、图像和各种风格，适合任何场合。</p>
+                    <button class="game-btn" onclick="openGame('birthday-card')">制作生日贺卡</button>
+                </div>
+            </div>
+
+            <!-- Game Modal -->
+            <div id="gameModal" class="modal" style="display: none;">
+                <div class="modal-content game-modal-content">
+                    <span class="close" onclick="closeGameModal()">&times;</span>
+                    <div id="gameContent">
+                        <!-- Game content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Display Area -->
+            <div id="resultsArea" class="results-area" style="display: none;">
+                <h2>🎯 结果</h2>
+                <div id="resultsContent">
+                    <!-- Results will be displayed here -->
+                </div>
+                <div class="action-buttons">
+                    <button class="share-btn" onclick="shareResults()">📱 分享结果</button>
+                    <button class="copy-btn" onclick="copyResults()">📋 复制到剪贴板</button>
+                    <button class="new-game-btn" onclick="startNewGame()">🔄 重新开始</button>
+                </div>
+            </div>
+
+            <!-- How to Use Section -->
+            <div class="info-section">
+                <h2>🎯 如何使用趣味年龄游戏</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>⭐ 名人年龄比较器</h3>
+                        <p><strong>第一步：</strong> 输入你的出生日期<br>
+                           <strong>第二步：</strong> 浏览与你同年出生的名人<br>
+                           <strong>第三步：</strong> 找到你的名人年龄双胞胎并分享结果！</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🏆 年龄挑战工具</h3>
+                        <p><strong>第一步：</strong> 输入你的出生日期和时间<br>
+                           <strong>第二步：</strong> 输入朋友的出生日期和时间<br>
+                           <strong>第三步：</strong> 看看谁更年长，精确到多少！</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🎨 AI生日贺卡生成器</h3>
+                        <p><strong>第一步：</strong> 输入收件人姓名和生日<br>
+                           <strong>第二步：</strong> 选择卡片风格并添加个性关键词<br>
+                           <strong>第三步：</strong> 生成AI贺卡并与朋友分享！</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Game Descriptions -->
+            <div class="detailed-games-section">
+                <h2>🎮 详细游戏功能</h2>
+                
+                <div class="game-description">
+                    <h3>⭐ 名人年龄比较器</h3>
+                    <div class="description-content">
+                        <p><strong>功能介绍：</strong> 找到与你同年出生或年龄相同的名人和知名人士。该工具使用综合的名人生日数据库为你匹配名人年龄双胞胎。</p>
+                        
+                        <p><strong>主要特点：</strong></p>
+                        <ul>
+                            <li>• <strong>精确年龄匹配：</strong> 找到同一天、同一月、同一年出生的名人</li>
+                            <li>• <strong>年份搜索：</strong> 发现所有与你同年出生的名人</li>
+                            <li>• <strong>多个类别：</strong> 演员、音乐家、运动员、政治家等等</li>
+                            <li>• <strong>档案信息：</strong> 查看名人照片、职业和成就</li>
+                            <li>• <strong>可分享结果：</strong> 创建定制卡片分享你的名人匹配</li>
+                        </ul>
+                        
+                        <p><strong>适用场景：</strong> 社交媒体分享、破冰游戏、生日聚会，以及发现与知名人士的有趣联系。</p>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h3>🏆 年龄挑战工具</h3>
+                    <div class="description-content">
+                        <p><strong>功能介绍：</strong> 提供你和朋友之间的精确年龄比较，显示精确到秒的差异。非常适合解决年龄争议和友好竞争。</p>
+                        
+                        <p><strong>主要特点：</strong></p>
+                        <ul>
+                            <li>• <strong>精确计时：</strong> 计算年、月、日、小时、分钟和秒的差异</li>
+                            <li>• <strong>多人参与：</strong> 一次比较多个朋友的年龄</li>
+                            <li>• <strong>趣味统计：</strong> 看看谁活得更多天、小时，甚至心跳次数</li>
+                            <li>• <strong>挑战卡片：</strong> 生成可分享的挑战结果和排名</li>
+                            <li>• <strong>团体竞赛：</strong> 适合聚会、团建或家庭聚会</li>
+                        </ul>
+                        
+                        <p><strong>适用场景：</strong> 朋友聚会、家庭团聚、办公室聚会、约会应用，以及任何年龄比较很有趣的社交场合。</p>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h3>🎨 AI生日贺卡生成器</h3>
+                    <div class="description-content">
+                        <p><strong>功能介绍：</strong> 使用AI技术创建个性化生日贺卡。根据收件人的个性和喜好生成独特的设计、消息和风格。</p>
+                        
+                        <p><strong>主要特点：</strong></p>
+                        <ul>
+                            <li>• <strong>AI驱动设计：</strong> 自动生成独特的卡片布局和图形</li>
+                            <li>• <strong>个性化消息：</strong> 基于个性关键词的定制生日祝福</li>
+                            <li>• <strong>多种风格：</strong> 选择可爱、优雅、有趣、专业或艺术主题</li>
+                            <li>• <strong>年龄特定内容：</strong> 适合不同年龄组的消息和设计</li>
+                            <li>• <strong>下载和分享：</strong> 保存为图片或直接在社交媒体上分享</li>
+                        </ul>
+                        
+                        <p><strong>适用场景：</strong> 临时生日礼物、社交媒体帖子、家人朋友、同事，或任何值得特殊生日祝福的人。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Features Section -->
+            <div class="features-section">
+                <h2>✨ 为什么选择趣味年龄游戏？</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🚀 即时娱乐</h3>
+                        <p>所有游戏在浏览器中即时加载。无需下载，无需注册，立即享受娱乐和结果。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>📱 移动优化</h3>
+                        <p>在手机、平板和桌面上都有完美体验。响应式设计让你随时随地都能玩。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🎯 可分享结果</h3>
+                        <p>创建精美的可分享卡片和结果，非常适合社交媒体、消息传递和向朋友炫耀。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🔒 隐私优先</h3>
+                        <p>所有计算都在您的浏览器中进行。我们不存储您的个人信息或出生日期。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🌍 全球数据库</h3>
+                        <p>名人数据库包括来自电影、音乐、体育、政治等领域的国际明星。</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🎨 AI驱动</h3>
+                        <p>先进的AI生成独特的个性化内容，每次使用都不同。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips and Tricks Section -->
+            <div class="tips-section">
+                <h2>💡 最大化乐趣的小贴士</h2>
+                
+                <div class="tips-content">
+                    <div class="tip-item">
+                        <h3>🎪 聚会游戏</h3>
+                        <p>在聚会上使用年龄挑战工具来破冰。让每个人比较年龄，看看谁的确切天数最大/最小！</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <h3>📸 社交媒体</h3>
+                        <p>在Instagram或微博上分享你的名人年龄匹配。标记你的朋友，挑战他们找到自己的名人双胞胎！</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <h3>🎁 个性化礼物</h3>
+                        <p>为家人制作AI生日贺卡。添加内部笑话或个人关键词让它们更加特别。</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <h3>📊 团体挑战</h3>
+                        <p>在年龄挑战中一次比较多个朋友。创建锦标赛，看看谁有最有趣的年龄组合！</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <p>&copy; 2025 <a href="https://agecomputation.com/zh/">年龄计算器</a>. 简单易用的在线日期计算工具。</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy-policy.html" rel="nofollow" class="footer-link">隐私政策</a>
+                    <span class="footer-separator">|</span>
+                    <a href="about-us.html" rel="nofollow" class="footer-link">关于我们</a>
+                    <span class="footer-separator">|</span>
+                    <a href="terms-of-service.html" rel="nofollow" class="footer-link">服务条款</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../language-switcher.js"></script>
+    <script>
+        // Set current language for the page
+        window.currentPageLanguage = 'zh';
+    </script>
+    <script src="fun-age-games-zh.js"></script>
+</body>
+</html>

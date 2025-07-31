@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fun Age Games – Compare your age with celebrities, challenge friends with age competitions, and generate custom AI birthday cards. Interactive age tools for entertainment and sharing.">
+    <meta name="keywords" content="birthday card generator, celebrity age comparator, age challenge tool, fun age games, age comparison, celebrity birthday, birthday card maker">
+    <meta name="author" content="Fun Age Games">
+    <meta property="og:title" content="Fun Age Games – Compare, Challenge, Celebrate!">
+    <meta property="og:description" content="Find out which celebrity shares your age, challenge friends by age, or generate a custom AI birthday card to share!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/fun-age-games">
+    <meta property="og:site_name" content="Fun Age Games">
+    <meta name="msvalidate.01" content="5D2AC5CCD24CDB1D57BD567A7FEAB3D0" />
+    <meta name="google-site-verification" content="Bder59iZjd6gQJdlAdbwOFsYc91w3LcEs_A9-JpigWE" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7471466190268036" crossorigin="anonymous"></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/fun-age-games">
+       <!-- Hreflang for multilingual SEO -->
+       <link rel="alternate" hreflang="en" href="https://agecomputation.com/fun-age-games">
+       <link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/fun-age-games">
+       <link rel="alternate" hreflang="it" href="https://agecomputation.com/it/fun-age-games">
+       <link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/fun-age-games">
+       <link rel="alternate" hreflang="x-default" href="https://agecomputation.com/fun-age-games">
+    
+    <title>Fun Age Games – Compare, Challenge, Celebrate!</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Fun Age Games",
+        "description": "Compare your age with celebrities, challenge friends, and generate custom birthday cards",
+        "url": "https://agecomputation.com/fun-age-games.html",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": "All",
+        "inLanguage": "en-US",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh">中文</option>
+                    <option value="en" selected>English</option>
+                    <option value="it">Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>🎮 Fun Age Games – Compare, Challenge, Celebrate!</h1>
+            <p class="subtitle">Interactive age tools for entertainment, comparison, and social sharing</p>
+            
+            <!-- Navigation Bar -->
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a href="https://agecomputation.com/" class="nav-item">
+                        <span class="nav-icon">🎂</span>
+                        <span class="nav-text">Age Calculator</span>
+                    </a>
+                    <a href="https://agecomputation.com/date-difference" class="nav-item">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">Date Difference</span>
+                    </a>
+                    <a href="https://agecomputation.com/life-age-tools" class="nav-item">
+                        <span class="nav-icon">🧮</span>
+                        <span class="nav-text">Life Age Tools</span>
+                    </a>
+                    <a href="https://agecomputation.com/tools-summary" class="nav-item">
+                        <span class="nav-icon">🛠️</span>
+                        <span class="nav-text">Tools Summary</span>
+                    </a>
+                    <a href="https://agecomputation.com/fun-age-games" class="nav-item active">
+                        <span class="nav-icon">🎮</span>
+                        <span class="nav-text">Fun Age Games</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="games-grid">
+                <!-- Celebrity Age Comparator -->
+                <div class="game-card">
+                    <div class="game-icon">⭐</div>
+                    <h3>Who Shares Your Age?</h3>
+                    <p>Discover which celebrities were born in the same year as you! Find your age twins among famous personalities.</p>
+                    <button class="game-btn" onclick="openGame('celebrity')">Compare with Celebrities</button>
+                </div>
+
+                <!-- Age Challenge Tool -->
+                <div class="game-card">
+                    <div class="game-icon">🏆</div>
+                    <h3>Age Challenge Tool</h3>
+                    <p>Challenge your friends! Compare ages down to the exact day, hour, and minute. Who's older?</p>
+                    <button class="game-btn" onclick="openGame('challenge')">Start Age Challenge</button>
+                </div>
+
+                <!-- AI Birthday Card Generator -->
+                <div class="game-card">
+                    <div class="game-icon">🎨</div>
+                    <h3>AI Birthday Card</h3>
+                    <p>Generate personalized AI birthday cards with custom messages, images, and styles for any occasion.</p>
+                    <button class="game-btn" onclick="openGame('birthday-card')">Create Birthday Card</button>
+                </div>
+            </div>
+
+            <!-- Game Modal -->
+            <div id="gameModal" class="modal" style="display: none;">
+                <div class="modal-content game-modal-content">
+                    <span class="close" onclick="closeGameModal()">&times;</span>
+                    <div id="gameContent">
+                        <!-- Game content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Display Area -->
+            <div id="resultsArea" class="results-area" style="display: none;">
+                <h2>🎯 Results</h2>
+                <div id="resultsContent">
+                    <!-- Results will be displayed here -->
+                </div>
+                <div class="action-buttons">
+                    <button class="share-btn" onclick="shareResults()">📱 Share Results</button>
+                    <button class="copy-btn" onclick="copyResults()">📋 Copy to Clipboard</button>
+                    <button class="new-game-btn" onclick="startNewGame()">🔄 Try Again</button>
+                </div>
+            </div>
+
+            <!-- How to Use Section -->
+            <div class="info-section">
+                <h2>🎯 How to Use Fun Age Games</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>⭐ Celebrity Age Comparator</h3>
+                        <p><strong>Step 1:</strong> Enter your birth date<br>
+                           <strong>Step 2:</strong> Browse celebrities born in your year<br>
+                           <strong>Step 3:</strong> Find your famous age twins and share the results!</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🏆 Age Challenge Tool</h3>
+                        <p><strong>Step 1:</strong> Enter your birth date and time<br>
+                           <strong>Step 2:</strong> Enter your friend's birth date and time<br>
+                           <strong>Step 3:</strong> See who's older and by exactly how much!</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🎨 AI Birthday Card Generator</h3>
+                        <p><strong>Step 1:</strong> Enter recipient's name and birthday<br>
+                           <strong>Step 2:</strong> Choose card style and add personal keywords<br>
+                           <strong>Step 3:</strong> Generate AI card and share with friends!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Game Descriptions -->
+            <div class="detailed-games-section">
+                <h2>🎮 Detailed Game Features</h2>
+                
+                <div class="game-description">
+                    <h3>⭐ Celebrity Age Comparator</h3>
+                    <div class="description-content">
+                        <p><strong>What it does:</strong> Finds celebrities and famous personalities who share your birth year or exact age. This tool uses a comprehensive database of celebrity birthdays to match you with your famous age twins.</p>
+                        
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>• <strong>Exact age matching:</strong> Find celebrities born on the same day, month, and year</li>
+                            <li>• <strong>Year-based search:</strong> Discover all famous people born in your birth year</li>
+                            <li>• <strong>Multiple categories:</strong> Actors, musicians, athletes, politicians, and more</li>
+                            <li>• <strong>Profile information:</strong> See celebrity photos, professions, and achievements</li>
+                            <li>• <strong>Shareable results:</strong> Create custom cards to share your celebrity matches</li>
+                        </ul>
+                        
+                        <p><strong>Perfect for:</strong> Social media sharing, ice breakers, birthday parties, and discovering interesting connections with famous personalities.</p>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h3>🏆 Age Challenge Tool</h3>
+                    <div class="description-content">
+                        <p><strong>What it does:</strong> Provides precise age comparisons between you and your friends, showing exact differences down to seconds. Perfect for settling age debates and friendly competitions.</p>
+                        
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>• <strong>Precision timing:</strong> Calculate differences in years, months, days, hours, minutes, and seconds</li>
+                            <li>• <strong>Multiple participants:</strong> Compare ages between multiple friends at once</li>
+                            <li>• <strong>Fun statistics:</strong> See who's lived more days, hours, or even heartbeats</li>
+                            <li>• <strong>Challenge cards:</strong> Generate shareable challenge results with rankings</li>
+                            <li>• <strong>Group competitions:</strong> Perfect for parties, team building, or family gatherings</li>
+                        </ul>
+                        
+                        <p><strong>Perfect for:</strong> Friend groups, family reunions, office parties, dating apps, and any social situation where age comparisons are fun.</p>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h3>🎨 AI Birthday Card Generator</h3>
+                    <div class="description-content">
+                        <p><strong>What it does:</strong> Creates personalized birthday cards using AI technology. Generate unique designs, messages, and styles based on the recipient's personality and preferences.</p>
+                        
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>• <strong>AI-powered design:</strong> Automatic generation of unique card layouts and graphics</li>
+                            <li>• <strong>Personalized messages:</strong> Custom birthday wishes based on personality keywords</li>
+                            <li>• <strong>Multiple styles:</strong> Choose from cute, elegant, funny, professional, or artistic themes</li>
+                            <li>• <strong>Age-specific content:</strong> Messages and designs appropriate for different age groups</li>
+                            <li>• <strong>Download and share:</strong> Save as image or share directly on social media</li>
+                        </ul>
+                        
+                        <p><strong>Perfect for:</strong> Last-minute birthday gifts, social media posts, family members, colleagues, or anyone who deserves a special birthday message.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Features Section -->
+            <div class="features-section">
+                <h2>✨ Why Choose Fun Age Games?</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🚀 Instant Fun</h3>
+                        <p>All games load instantly in your browser. No downloads, no sign-ups, just immediate entertainment and results.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>📱 Mobile Optimized</h3>
+                        <p>Perfect experience on phones, tablets, and desktops. Play anywhere, anytime with responsive design.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🎯 Shareable Results</h3>
+                        <p>Create beautiful, shareable cards and results perfect for social media, messaging, and showing off to friends.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🔒 Privacy First</h3>
+                        <p>All calculations happen in your browser. We don't store your personal information or birth dates.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🌍 Global Database</h3>
+                        <p>Celebrity database includes international stars from movies, music, sports, politics, and more.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🎨 AI Powered</h3>
+                        <p>Advanced AI generates unique, personalized content that's different every time you use it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips and Tricks Section -->
+            <div class="tips-section">
+                <h2>💡 Tips for Maximum Fun</h2>
+                
+                <div class="tips-content">
+                    <div class="tip-item">
+                        <h3>🎪 Party Games</h3>
+                        <p>Use the Age Challenge tool at parties to break the ice. Have everyone compare ages and see who's the oldest/youngest by exact days!</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <h3>📸 Social Media</h3>
+                        <p>Share your celebrity age matches on Instagram or Facebook. Tag your friends and challenge them to find their celebrity twins!</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <h3>🎁 Personalized Gifts</h3>
+                        <p>Create AI birthday cards for family members. Add inside jokes or personal keywords to make them extra special.</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <h3>📊 Group Challenges</h3>
+                        <p>Compare multiple friends at once in the Age Challenge. Create tournaments to see who has the most interesting age combinations!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <p>&copy; 2025 <a href="https://agecomputation.com/">Age Calculator</a>. Simple and easy-to-use online date calculation tool.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy-policy.html" rel="nofollow" class="footer-link">Privacy Policy</a>
+                    <span class="footer-separator">|</span>
+                    <a href="about-us.html" rel="nofollow" class="footer-link">About Us</a>
+                    <span class="footer-separator">|</span>
+                    <a href="terms-of-service.html" rel="nofollow" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="language-switcher.js"></script>
+    <script>
+        // Set current language for the page
+        window.currentPageLanguage = 'en';
+    </script>
+    <script src="fun-age-games.js"></script>
+</body>
+</html>

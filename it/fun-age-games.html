@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giochi Divertenti dell'Età – Confronta la tua età con le celebrità, sfida gli amici con competizioni di età e genera cartoline di compleanno AI personalizzate. Strumenti interattivi per intrattenimento e condivisione.">
+    <meta name="keywords" content="generatore cartoline compleanno, comparatore età celebrità, strumento sfida età, giochi divertenti età, confronto età, compleanno celebrità, creatore cartoline compleanno">
+    <meta name="author" content="Giochi Divertenti dell'Età">
+    <meta property="og:title" content="Giochi Divertenti dell'Età – Confronta, Sfida, Celebra!">
+    <meta property="og:description" content="Scopri quale celebrità condivide la tua età, sfida gli amici per età, o genera una cartolina di compleanno AI personalizzata da condividere!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agecomputation.com/it/fun-age-games">
+    <meta property="og:site_name" content="Giochi Divertenti dell'Età">
+    <meta name="msvalidate.01" content="5D2AC5CCD24CDB1D57BD567A7FEAB3D0" />
+    <meta name="google-site-verification" content="Bder59iZjd6gQJdlAdbwOFsYc91w3LcEs_A9-JpigWE" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7471466190268036" crossorigin="anonymous"></script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://agecomputation.com/it/fun-age-games">
+    <!-- Hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://agecomputation.com/fun-age-games">
+    <link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/fun-age-games">
+    <link rel="alternate" hreflang="it" href="https://agecomputation.com/it/fun-age-games">
+    <link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/fun-age-games">
+    <link rel="alternate" hreflang="x-default" href="https://agecomputation.com/fun-age-games">
+    
+    <title>Giochi Divertenti dell'Età – Confronta, Sfida, Celebra!</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Giochi Divertenti dell'Età",
+        "description": "Confronta la tua età con le celebrità, sfida gli amici e genera cartoline di compleanno personalizzate",
+        "url": "https://agecomputation.com/it/fun-age-games.html",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": "All",
+        "inLanguage": "it-IT",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-selector">
+                <select id="languageSelect" class="language-dropdown">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                    <option value="it" selected>Italiano</option>
+                    <option value="vi">Tiếng Việt</option>
+                </select>
+            </div>
+            <h1>🎮 Giochi Divertenti dell'Età – Confronta, Sfida, Celebra!</h1>
+            <p class="subtitle">Strumenti interattivi dell'età per intrattenimento, confronto e condivisione sociale</p>
+            
+            <!-- Navigation Bar -->
+            <nav class="main-nav">
+                <div class="nav-container">
+                    <a href="https://agecomputation.com/it/" class="nav-item">
+                        <span class="nav-icon">🎂</span>
+                        <span class="nav-text">Calcolatore Età</span>
+                    </a>
+                    <a href="https://agecomputation.com/it/date-difference" class="nav-item">
+                        <span class="nav-icon">📅</span>
+                        <span class="nav-text">Differenza Date</span>
+                    </a>
+                    <a href="https://agecomputation.com/it/life-age-tools" class="nav-item">
+                        <span class="nav-icon">🧮</span>
+                        <span class="nav-text">Strumenti Età Vita</span>
+                    </a>
+                    <a href="https://agecomputation.com/it/tools-summary" class="nav-item">
+                        <span class="nav-icon">🛠️</span>
+                        <span class="nav-text">Riassunto Strumenti</span>
+                    </a>
+                    <a href="https://agecomputation.com/it/fun-age-games" class="nav-item active">
+                        <span class="nav-icon">🎮</span>
+                        <span class="nav-text">Giochi Divertenti Età</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="games-grid">
+                <!-- Celebrity Age Comparator -->
+                <div class="game-card">
+                    <div class="game-icon">⭐</div>
+                    <h3>Chi Condivide la Tua Età?</h3>
+                    <p>Scopri quali celebrità sono nate nello stesso anno di te! Trova i tuoi gemelli di età tra le personalità famose.</p>
+                    <button class="game-btn" onclick="openGame('celebrity')">Confronta con Celebrità</button>
+                </div>
+
+                <!-- Age Challenge Tool -->
+                <div class="game-card">
+                    <div class="game-icon">🏆</div>
+                    <h3>Strumento Sfida Età</h3>
+                    <p>Sfida i tuoi amici! Confronta le età fino al giorno, ora e minuto esatto. Chi è più vecchio?</p>
+                    <button class="game-btn" onclick="openGame('challenge')">Inizia Sfida Età</button>
+                </div>
+
+                <!-- AI Birthday Card Generator -->
+                <div class="game-card">
+                    <div class="game-icon">🎨</div>
+                    <h3>Cartolina Compleanno AI</h3>
+                    <p>Genera cartoline di compleanno personalizzate AI con messaggi personalizzati, immagini e stili per ogni occasione.</p>
+                    <button class="game-btn" onclick="openGame('birthday-card')">Crea Cartolina Compleanno</button>
+                </div>
+            </div>
+
+            <!-- Game Modal -->
+            <div id="gameModal" class="modal" style="display: none;">
+                <div class="modal-content game-modal-content">
+                    <span class="close" onclick="closeGameModal()">&times;</span>
+                    <div id="gameContent">
+                        <!-- Game content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Display Area -->
+            <div id="resultsArea" class="results-area" style="display: none;">
+                <h2>🎯 Risultati</h2>
+                <div id="resultsContent">
+                    <!-- Results will be displayed here -->
+                </div>
+                <div class="action-buttons">
+                    <button class="share-btn" onclick="shareResults()">📱 Condividi Risultati</button>
+                    <button class="copy-btn" onclick="copyResults()">📋 Copia negli Appunti</button>
+                    <button class="new-game-btn" onclick="startNewGame()">🔄 Riprova</button>
+                </div>
+            </div>
+
+            <!-- How to Use Section -->
+            <div class="info-section">
+                <h2>🎯 Come Usare i Giochi Divertenti dell'Età</h2>
+                <div class="info-content">
+                    <div class="info-item">
+                        <h3>⭐ Comparatore Età Celebrità</h3>
+                        <p><strong>Passo 1:</strong> Inserisci la tua data di nascita<br>
+                           <strong>Passo 2:</strong> Sfoglia le celebrità nate nel tuo anno<br>
+                           <strong>Passo 3:</strong> Trova i tuoi famosi gemelli di età e condividi i risultati!</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🏆 Strumento Sfida Età</h3>
+                        <p><strong>Passo 1:</strong> Inserisci la tua data e ora di nascita<br>
+                           <strong>Passo 2:</strong> Inserisci la data e ora di nascita del tuo amico<br>
+                           <strong>Passo 3:</strong> Vedi chi è più vecchio e di quanto esattamente!</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🎨 Generatore Cartoline Compleanno AI</h3>
+                        <p><strong>Passo 1:</strong> Inserisci nome del destinatario e compleanno<br>
+                           <strong>Passo 2:</strong> Scegli lo stile della cartolina e aggiungi parole chiave personali<br>
+                           <strong>Passo 3:</strong> Genera cartolina AI e condividi con gli amici!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Game Descriptions -->
+            <div class="detailed-games-section">
+                <h2>🎮 Funzionalità Dettagliate dei Giochi</h2>
+                
+                <div class="game-description">
+                    <h3>⭐ Comparatore Età Celebrità</h3>
+                    <div class="description-content">
+                        <p><strong>Cosa fa:</strong> Trova celebrità e personalità famose che condividono il tuo anno di nascita o età esatta. Questo strumento utilizza un database completo di compleanni delle celebrità per abbinarti ai tuoi famosi gemelli di età.</p>
+                        
+                        <p><strong>Funzionalità Principali:</strong></p>
+                        <ul>
+                            <li>• <strong>Abbinamento età esatto:</strong> Trova celebrità nate nello stesso giorno, mese e anno</li>
+                            <li>• <strong>Ricerca basata sull'anno:</strong> Scopri tutte le persone famose nate nel tuo anno di nascita</li>
+                            <li>• <strong>Categorie multiple:</strong> Attori, musicisti, atleti, politici e altro</li>
+                            <li>• <strong>Informazioni profilo:</strong> Vedi foto delle celebrità, professioni e risultati</li>
+                            <li>• <strong>Risultati condivisibili:</strong> Crea cartoline personalizzate per condividere i tuoi abbinamenti celebrità</li>
+                        </ul>
+                        
+                        <p><strong>Perfetto per:</strong> Condivisione sui social media, rompighiaccio, feste di compleanno e scoperta di connessioni interessanti con personalità famose.</p>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h3>🏆 Strumento Sfida Età</h3>
+                    <div class="description-content">
+                        <p><strong>Cosa fa:</strong> Fornisce confronti di età precisi tra te e i tuoi amici, mostrando differenze esatte fino ai secondi. Perfetto per risolvere dibattiti sull'età e competizioni amichevoli.</p>
+                        
+                        <p><strong>Funzionalità Principali:</strong></p>
+                        <ul>
+                            <li>• <strong>Tempistica di precisione:</strong> Calcola differenze in anni, mesi, giorni, ore, minuti e secondi</li>
+                            <li>• <strong>Partecipanti multipli:</strong> Confronta età tra più amici contemporaneamente</li>
+                            <li>• <strong>Statistiche divertenti:</strong> Vedi chi ha vissuto più giorni, ore o persino battiti cardiaci</li>
+                            <li>• <strong>Cartoline sfida:</strong> Genera risultati sfida condivisibili con classifiche</li>
+                            <li>• <strong>Competizioni di gruppo:</strong> Perfetto per feste, team building o riunioni di famiglia</li>
+                        </ul>
+                        
+                        <p><strong>Perfetto per:</strong> Gruppi di amici, riunioni di famiglia, feste in ufficio, app di incontri e qualsiasi situazione sociale dove i confronti di età sono divertenti.</p>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <h3>🎨 Generatore Cartoline Compleanno AI</h3>
+                    <div class="description-content">
+                        <p><strong>Cosa fa:</strong> Crea cartoline di compleanno personalizzate utilizzando la tecnologia AI. Genera design, messaggi e stili unici basati sulla personalità e preferenze del destinatario.</p>
+                        
+                        <p><strong>Funzionalità Principali:</strong></p>
+                        <ul>
+                            <li>• <strong>Design alimentato da AI:</strong> Generazione automatica di layout e grafica di cartoline uniche</li>
+                            <li>• <strong>Messaggi personalizzati:</strong> Auguri di compleanno personalizzati basati su parole chiave della personalità</li>
+                            <li>• <strong>Stili multipli:</strong> Scegli tra temi carini, eleganti, divertenti, professionali o artistici</li>
+                            <li>• <strong>Contenuto specifico per età:</strong> Messaggi e design appropriati per diverse fasce d'età</li>
+                            <li>• <strong>Scarica e condividi:</strong> Salva come immagine o condividi direttamente sui social media</li>
+                        </ul>
+                        
+                        <p><strong>Perfetto per:</strong> Regali di compleanno dell'ultimo minuto, post sui social media, membri della famiglia, colleghi o chiunque meriti un messaggio di compleanno speciale.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Features Section -->
+            <div class="features-section">
+                <h2>✨ Perché Scegliere i Giochi Divertenti dell'Età?</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🚀 Divertimento Istantaneo</h3>
+                        <p>Tutti i giochi si caricano istantaneamente nel tuo browser. Nessun download, nessuna registrazione, solo intrattenimento immediato e risultati.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>📱 Ottimizzato per Mobile</h3>
+                        <p>Esperienza perfetta su telefoni, tablet e desktop. Gioca ovunque, in qualsiasi momento con design responsivo.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🎯 Risultati Condivisibili</h3>
+                        <p>Crea bellissime cartoline e risultati condivisibili perfetti per social media, messaggi e mostrare agli amici.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🔒 Privacy Prima di Tutto</h3>
+                        <p>Tutti i calcoli avvengono nel tuo browser. Non memorizziamo le tue informazioni personali o date di nascita.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🌍 Database Globale</h3>
+                        <p>Il database delle celebrità include stelle internazionali da film, musica, sport, politica e altro.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🎨 Alimentato da AI</h3>
+                        <p>AI avanzata genera contenuti unici e personalizzati che sono diversi ogni volta che li usi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips and Tricks Section -->
+            <div class="tips-section">
+                <h2>💡 Consigli per il Massimo Divertimento</h2>
+                
+                <div class="tips-content">
+                    <div class="tip-item">
+                        <h3>🎪 Giochi per Feste</h3>
+                        <p>Usa lo strumento Sfida Età alle feste per rompere il ghiaccio. Fai confrontare l'età a tutti e vedi chi è il più vecchio/giovane per giorni esatti!</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <h3>📸 Social Media</h3>
+                        <p>Condividi i tuoi abbinamenti di età delle celebrità su Instagram o Facebook. Tagga i tuoi amici e sfidali a trovare i loro gemelli celebrità!</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <h3>🎁 Regali Personalizzati</h3>
+                        <p>Crea cartoline di compleanno AI per i membri della famiglia. Aggiungi battute interne o parole chiave personali per renderle extra speciali.</p>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <h3>📊 Sfide di Gruppo</h3>
+                        <p>Confronta più amici contemporaneamente nella Sfida Età. Crea tornei per vedere chi ha le combinazioni di età più interessanti!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <p>&copy; 2025 <a href="https://agecomputation.com/it/">Calcolatore Età</a>. Strumento di calcolo date online semplice e facile da usare.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../privacy-policy.html" rel="nofollow" class="footer-link">Politica Privacy</a>
+                    <span class="footer-separator">|</span>
+                    <a href="../about-us.html" rel="nofollow" class="footer-link">Chi Siamo</a>
+                    <span class="footer-separator">|</span>
+                    <a href="../terms-of-service.html" rel="nofollow" class="footer-link">Termini di Servizio</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../language-switcher.js"></script>
+    <script>
+        // Set current language for the page
+        window.currentPageLanguage = 'it';
+        
+        // Celebrity data with birth years (Italian celebrities included)
+        const celebrities = [
+            // International celebrities
+            { name: "Taylor Swift", year: 1989, profession: "Cantante" },
+            { name: "Leonardo DiCaprio", year: 1974, profession: "Attore" },
+            { name: "Beyoncé", year: 1981, profession: "Cantante" },
+            { name: "Ryan Reynolds", year: 1976, profession: "Attore" },
+            { name: "Adele", year: 1988, profession: "Cantante" },
+            { name: "Brad Pitt", year: 1963, profession: "Attore" },
+            { name: "Jennifer Lawrence", year: 1990, profession: "Attrice" },
+            { name: "Justin Timberlake", year: 1981, profession: "Cantante/Attore" },
+            { name: "Emma Stone", year: 1988, profession: "Attrice" },
+            { name: "Ryan Gosling", year: 1980, profession: "Attore" },
+            
+            // Italian celebrities
+            { name: "Roberto Benigni", year: 1952, profession: "Attore/Regista" },
+            { name: "Monica Bellucci", year: 1964, profession: "Attrice/Modella" },
+            { name: "Eros Ramazzotti", year: 1963, profession: "Cantante" },
+            { name: "Sophia Loren", year: 1934, profession: "Attrice" },
+            { name: "Luciano Pavarotti", year: 1935, profession: "Tenore" },
+            { name: "Francesco Totti", year: 1976, profession: "Calciatore" },
+            { name: "Laura Pausini", year: 1974, profession: "Cantante" },
+            { name: "Gianni Morandi", year: 1944, profession: "Cantante" },
+            { name: "Claudio Baglioni", year: 1951, profession: "Cantante" },
+            { name: "Pierfrancesco Favino", year: 1969, profession: "Attore" }
+        ];
+
+        let challengeParticipants = [];
+
+        function openGame(gameType) {
+            const modal = document.getElementById('gameModal');
+            const content = document.getElementById('gameContent');
+            
+            switch(gameType) {
+                case 'celebrity':
+                    content.innerHTML = `
+                        <h2>⭐ Comparatore Età Celebrità</h2>
+                        <p>Inserisci la tua data di nascita per trovare celebrità che condividono la tua età!</p>
+                        <div class="game-form">
+                            <label>La tua data di nascita:</label>
+                            <input type="date" id="userBirthDate" class="date-input">
+                            <button onclick="findCelebrity()" class="action-btn">Trova Celebrità</button>
+                        </div>
+                        <div id="celebrityResults" class="results-container"></div>
+                    `;
+                    break;
+                case 'challenge':
+                    content.innerHTML = `
+                        <h2>🏆 Strumento Sfida Età</h2>
+                        <p>Aggiungi partecipanti per confrontare le età!</p>
+                        <div class="game-form">
+                            <label>Nome:</label>
+                            <input type="text" id="participantName" placeholder="Inserisci nome" class="text-input">
+                            <label>Data di nascita:</label>
+                            <input type="date" id="participantBirthDate" class="date-input">
+                            <button onclick="addParticipant()" class="action-btn">Aggiungi Partecipante</button>
+                        </div>
+                        <div id="participantsList" class="participants-list"></div>
+                        <div id="challengeResults" class="results-container"></div>
+                    `;
+                    break;
+                case 'birthday-card':
+                    content.innerHTML = `
+                        <h2>🎨 Generatore Cartoline Compleanno AI</h2>
+                        <p>Crea una cartolina di compleanno personalizzata!</p>
+                        <div class="game-form">
+                            <label>Nome destinatario:</label>
+                            <input type="text" id="recipientName" placeholder="Inserisci nome" class="text-input">
+                            <label>Data di nascita:</label>
+                            <input type="date" id="recipientBirthDate" class="date-input">
+                            <label>Stile cartolina:</label>
+                            <select id="cardStyle" class="select-input">
+                                <option value="cute">🎂 Carino</option>
+                                <option value="elegant">✨ Elegante</option>
+                                <option value="funny">😄 Divertente</option>
+                                <option value="professional">💼 Professionale</option>
+                            </select>
+                            <button onclick="generateBirthdayCard()" class="action-btn">Genera Cartolina</button>
+                        </div>
+                        <div id="cardResults" class="results-container"></div>
+                    `;
+                    break;
+            }
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGameModal() {
+            document.getElementById('gameModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function findCelebrity() {
+            const birthDate = document.getElementById('userBirthDate').value;
+            if (!birthDate) {
+                alert('Per favore inserisci la tua data di nascita!');
+                return;
+            }
+
+            const birthYear = new Date(birthDate).getFullYear();
+            const matchingCelebs = celebrities.filter(celeb => celeb.year === birthYear);
+            
+            const resultsDiv = document.getElementById('celebrityResults');
+            
+            if (matchingCelebs.length > 0) {
+                const randomCeleb = matchingCelebs[Math.floor(Math.random() * matchingCelebs.length)];
+                const age = new Date().getFullYear() - birthYear;
+                
+                resultsDiv.innerHTML = `
+                    <div class="celebrity-match">
+                        <h3>🌟 La tua celebrità gemella!</h3>
+                        <div class="celebrity-info">
+                            <h4>${randomCeleb.name}</h4>
+                            <p><strong>Professione:</strong> ${randomCeleb.profession}</p>
+                            <p><strong>Anno di nascita:</strong> ${randomCeleb.year}</p>
+                            <p><strong>Età attuale:</strong> ${age} anni</p>
+                            <p class="match-text">🎉 Condividi lo stesso anno di nascita con ${randomCeleb.name}!</p>
+                        </div>
+                        <button onclick="findAnotherCelebrity()" class="secondary-btn">🔄 Trova un'altra celebrità</button>
+                    </div>
+                `;
+            } else {
+                resultsDiv.innerHTML = `
+                    <div class="no-match">
+                        <p>😔 Spiacenti, non abbiamo trovato celebrità nate nel tuo anno nel nostro database.</p>
+                        <p>Ma questo ti rende ancora più unico!</p>
+                    </div>
+                `;
+            }
+        }
+
+        function findAnotherCelebrity() {
+            findCelebrity();
+        }
+
+        function addParticipant() {
+            const name = document.getElementById('participantName').value.trim();
+            const birthDate = document.getElementById('participantBirthDate').value;
+            
+            if (!name || !birthDate) {
+                alert('Per favore inserisci nome e data di nascita!');
+                return;
+            }
+            
+            const age = calculateAge(birthDate);
+            challengeParticipants.push({ name, birthDate, age });
+            
+            updateParticipantsList();
+            
+            // Clear inputs
+            document.getElementById('participantName').value = '';
+            document.getElementById('participantBirthDate').value = '';
+            
+            if (challengeParticipants.length >= 2) {
+                showChallengeResults();
+            }
+        }
+
+        function calculateAge(birthDate) {
+            const today = new Date();
+            const birth = new Date(birthDate);
+            let age = today.getFullYear() - birth.getFullYear();
+            const monthDiff = today.getMonth() - birth.getMonth();
+            
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+                age--;
+            }
+            
+            return age;
+        }
+
+        function updateParticipantsList() {
+            const listDiv = document.getElementById('participantsList');
+            listDiv.innerHTML = `
+                <h4>👥 Partecipanti (${challengeParticipants.length}):</h4>
+                ${challengeParticipants.map((person, index) => `
+                    <div class="participant-item">
+                        <span>${person.name} - ${person.age} anni</span>
+                        <button onclick="removeParticipant(${index})" class="remove-btn">❌</button>
+                    </div>
+                `).join('')}
+            `;
+        }
+
+        function removeParticipant(index) {
+            challengeParticipants.splice(index, 1);
+            updateParticipantsList();
+            
+            if (challengeParticipants.length >= 2) {
+                showChallengeResults();
+            } else {
+                document.getElementById('challengeResults').innerHTML = '';
+            }
+        }
+
+        function showChallengeResults() {
+            const sorted = [...challengeParticipants].sort((a, b) => b.age - a.age);
+            const resultsDiv = document.getElementById('challengeResults');
+            
+            resultsDiv.innerHTML = `
+                <h4>🏅 Risultati Sfida:</h4>
+                <div class="ranking-list">
+                    ${sorted.map((person, index) => `
+                        <div class="ranking-item ${index === 0 ? 'oldest' : index === sorted.length - 1 ? 'youngest' : ''}">
+                            <span class="rank">${index + 1}</span>
+                            <span class="name">${person.name}</span>
+                            <span class="age">${person.age} anni</span>
+                            ${index === 0 ? '<span class="badge">👑 Più Vecchio</span>' : ''}
+                            ${index === sorted.length - 1 ? '<span class="badge">🌟 Più Giovane</span>' : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function generateBirthdayCard() {
+            const name = document.getElementById('recipientName').value.trim();
+            const birthDate = document.getElementById('recipientBirthDate').value;
+            const style = document.getElementById('cardStyle').value;
+            
+            if (!name || !birthDate) {
+                alert('Per favore inserisci nome e data di nascita!');
+                return;
+            }
+            
+            const age = calculateAge(birthDate);
+            const resultsDiv = document.getElementById('cardResults');
+            
+            const styles = {
+                cute: { bg: 'linear-gradient(45deg, #ff9a9e, #fecfef)', emoji: '🎂' },
+                elegant: { bg: 'linear-gradient(45deg, #89f7fe, #66a6ff)', emoji: '✨' },
+                funny: { bg: 'linear-gradient(45deg, #fc4a1a, #f7b733)', emoji: '😄' },
+                professional: { bg: 'linear-gradient(45deg, #667eea, #764ba2)', emoji: '🎉' }
+            };
+            
+            const selectedStyle = styles[style];
+            
+            resultsDiv.innerHTML = `
+                <h4>📮 La tua cartolina di compleanno:</h4>
+                <div class="birthday-card" style="background: ${selectedStyle.bg}; color: white; padding: 20px; border-radius: 10px; text-align: center;">
+                    <h2>${selectedStyle.emoji} Buon Compleanno! ${selectedStyle.emoji}</h2>
+                    <h3>Caro/a ${name},</h3>
+                    <p>🎂 Congratulazioni per i tuoi ${age} anni!</p>
+                    <p>🌟 Che questo nuovo anno di vita sia pieno di gioia, salute e successo!</p>
+                    <p>🎁 Ogni anno è un nuovo inizio, ogni giorno una nuova opportunità.</p>
+                    <p>💝 Con affetto</p>
+                </div>
+                <button onclick="generateAnotherCard()" class="secondary-btn">🔄 Genera Altra Cartolina</button>
+            `;
+        }
+
+        function generateAnotherCard() {
+            generateBirthdayCard();
+        }
+
+        function shareResults() {
+            const shareText = "Guarda cosa ho scoperto sui Giochi Divertenti dell'Età!";
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Giochi Divertenti dell\'Età',
+                    text: shareText,
+                    url: window.location.href
+                });
+            } else {
+                navigator.clipboard.writeText(shareText + ' ' + window.location.href);
+                alert('Risultati copiati negli appunti!');
+            }
+        }
+
+        function copyResults() {
+            const resultsText = document.querySelector('#resultsContent').innerText;
+            navigator.clipboard.writeText(resultsText);
+            alert('Risultati copiati negli appunti!');
+        }
+
+        function startNewGame() {
+            challengeParticipants = [];
+            document.getElementById('resultsArea').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('gameModal');
+            if (event.target === modal) {
+                closeGameModal();
+            }
+        }
+    </script>
+</body>
+</html>

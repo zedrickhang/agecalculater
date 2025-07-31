@@ -2,56 +2,320 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     
-    <!-- Chinese (Default) -->
+    <!-- Main Pages - English (Default) -->
     <url>
         <loc>https://agecomputation.com/</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2025-07-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
-       <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/"/>
-		<xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/"/>
         <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/"/>
     </url>
     
-    <!-- English -->
+    <url>
+        <loc>https://agecomputation.com/date-difference</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/date-difference"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/life-age-tools</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/life-age-tools"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/special-day-calculator</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/special-day-calculator"/>
+    </url>
+    
+    <!-- Tools Summary Pages -->
+    <url>
+        <loc>https://agecomputation.com/tools-summary</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/tools-summary"/>
+    </url>
+    
+    <!-- Fun Age Games Pages -->
+    <url>
+        <loc>https://agecomputation.com/fun-age-games</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/fun-age-games"/>
+    </url>
+    
+    <!-- Legal Pages - English -->
+    <url>
+        <loc>https://agecomputation.com/privacy-policy</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/terms-of-service</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/about-us</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Chinese Pages -->
     <url>
         <loc>https://agecomputation.com/zh/</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2025-07-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/"/>
-		<xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/"/>
         <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/"/>
     </url>
     
-    <!-- Italian -->
     <url>
-        <loc>https://agecomputation.com/it/</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://agecomputation.com/zh/date-difference</loc>
+        <lastmod>2025-07-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-		<xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/"/>
-		<xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/"/>
-        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/date-difference"/>
     </url>
     
-    <!-- Vietnamese -->
     <url>
-        <loc>https://agecomputation.com/vi/</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://agecomputation.com/zh/life-age-tools</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/life-age-tools"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/zh/special-day-calculator</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/special-day-calculator"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/zh/tools-summary</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/tools-summary"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/zh/fun-age-games</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/fun-age-games"/>
+    </url>
+    
+    <!-- Italian Pages -->
+    <url>
+        <loc>https://agecomputation.com/it/</loc>
+        <lastmod>2025-07-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/"/>
-		<xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/"/>
         <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/"/>
         <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/it/date-difference</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/date-difference"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/it/life-age-tools</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/life-age-tools"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/it/special-day-calculator</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/special-day-calculator"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/it/tools-summary</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/tools-summary"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/it/fun-age-games</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/fun-age-games"/>
+    </url>
+    
+    <!-- Vietnamese Pages -->
+    <url>
+        <loc>https://agecomputation.com/vi/</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/vi/date-difference</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/date-difference"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/date-difference"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/vi/life-age-tools</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/life-age-tools"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/life-age-tools"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/vi/special-day-calculator</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/special-day-calculator"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/special-day-calculator"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/vi/tools-summary</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/tools-summary"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/tools-summary"/>
+    </url>
+    
+    <url>
+        <loc>https://agecomputation.com/vi/fun-age-games</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://agecomputation.com/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://agecomputation.com/zh/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://agecomputation.com/it/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="vi" href="https://agecomputation.com/vi/fun-age-games"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://agecomputation.com/fun-age-games"/>
     </url>
     
 </urlset> 
